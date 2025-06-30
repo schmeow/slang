@@ -1,0 +1,2615 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[    143553,       2605]
+NotebookOptionsPosition[    142005,       2572]
+NotebookOutlinePosition[    142402,       2588]
+CellTagsIndexPosition[    142359,       2585]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"slang", " ", "=", " ", 
+  RowBox[{"Import", "[", 
+   RowBox[{"\"\</Users/anum/Downloads/all_slangs.csv\>\"", 
+    ",", "\"\<CSV\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9602835434841623`*^9, 3.960283557989065*^9}, {
+  3.960283625432229*^9, 3.9602836386595373`*^9}},
+ CellLabel->
+  "In[232]:=",ExpressionUUID->"d97e7464-d416-4b45-8da8-c1f77c5cd644"],
+
+Cell[BoxData[
+ TemplateBox[<|"shortenedBoxes" -> TagBox[
+     RowBox[{"{", 
+       RowBox[{
+         RowBox[{"{", 
+           
+           RowBox[{"\"Slang\"", ",", "\"Description\"", ",", "\"Example\"", 
+             ",", "\"Context\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"W\"", ",", "\"Shorthand for win\"", ",", 
+             "\"Got the job today, big W!\"", ",", 
+             "\"Typically used in conversations to celebrate success, \
+achievements, or positive outcomes\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"L\"", ",", "\"Shorthand for loss/losing\"", ",", 
+             "\"I forgot my wallet at home, that\[CloseCurlyQuote]s an L.\"", 
+             ",", "\"Often used when referring to a failure or mishap, either \
+personally or generally\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"L+ratio\"", ",", 
+             "\"Response to a comment or action on the internet that is \
+particularly bad.\"", ",", 
+             "\"Your tweet got 5 likes and 100 replies calling you out. L + \
+ratio.\"", ",", 
+             "\"Popularized on social media platforms to signify that someone \
+not only failed but also had their failure amplified through backlash.\""}], 
+           "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"Dank\"", ",", "\"excellent or of very high quality\"", 
+             ",", "\"That meme is so dank!\"", ",", 
+             "\"Commonly used in internet slang to refer to memes or humor \
+that are edgy or particularly funny.\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"Cheugy\"", ",", 
+             "\"Derogatory term for Millennials. Used when millennials are \
+perceived to be excessively attempting to be trendy or stylish.\"", ",", 
+             "\"That phrase is so cheugy, no one says that anymore.\"", ",", 
+             "\"Used to refer to things that were once popular but are now \
+considered pass\[EAcute], usually in a millennial vs. Gen Z context.\""}], 
+           "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"TFW\"", ",", "\" That feeling when\"", ",", 
+             "\"TFW you finish a big project and can finally relax\"", ",", 
+             "\"Often paired with an image or caption to convey an emotion or \
+experience, mostly used in memes.\""}], "}"}], ",", 
+         TemplateBox[{"1767"}, "OutputSizeLimit`Skeleton"], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"Z%\"", ",", "\"Zoo\"", ",", 
+             "\"This place is a Z% with all the chaos.\"", ",", 
+             "\"Refers to a chaotic or busy environment.\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZH\"", ",", "\"Sleeping Hour\"", ",", 
+             "\"It\[CloseCurlyQuote]s ZH, goodnight!\"", ",", 
+             "\"Refers to the time when someone usually goes to sleep.\""}], 
+           "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZOMG\"", ",", "\"Oh My God\"", ",", 
+             "\"ZOMG, I can\[CloseCurlyQuote]t believe you did that!\"", ",", 
+             "\"An exaggerated or enthusiastic version of \\\"OMG,\\\" often \
+used for emphasis.\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZOT\"", ",", "\"Zero tolerance\"", ",", 
+             "\"Our school has a ZOT policy for bullying.\"", ",", 
+             "\"Refers to a strict policy where certain behaviors, such as \
+violence or harassment, are not tolerated under any circumstances.\""}], 
+           "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZUP\"", ",", "\"What\[CloseCurlyQuote]s up?\"", ",", 
+             "\"Hey, ZUP with you today?\"", ",", 
+             "\"A casual way to ask how someone is doing or what\
+\[CloseCurlyQuote]s going on.\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZZZZ\"", ",", "\"Sleeping\"", ",", 
+             "\"I was so tired, I went to bed and was out in seconds, \
+ZZZZ.\"", ",", 
+             "\"Represents sleep or someone being asleep, often used \
+humorously.\""}], "}"}]}], "}"}], Short[#, 32]& ], "line" -> 232, "sessionID" -> 
+   17766153405877121193, "byteCount" -> 568312, "size" -> 32, "stored" -> 
+   False, "expr" -> Missing["NotStored"], "wrap" -> OutputSizeLimit`Defer, 
+   "version" -> 1|>,
+  "OutputSizeLimitTemplate"]], "Output",
+ CellChangeTimes->{{3.960283630841364*^9, 3.9602836391835938`*^9}},
+ CellLabel->
+  "Out[232]=",ExpressionUUID->"0b0034dc-e439-4112-a560-14c3e9b88fe1"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"slangDataset", "=", 
+   RowBox[{"Table", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"AssociationThread", "[", 
+      RowBox[{
+       RowBox[{"First", "@", "slang"}], ",", "element"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"element", ",", 
+       RowBox[{"Most", "@", 
+        RowBox[{"Drop", "[", 
+         RowBox[{"slang", ",", "1"}], "]"}]}]}], "}"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.9602849795475082`*^9, 3.960285048384482*^9}, {
+  3.960285080798435*^9, 3.960285083745138*^9}},
+ CellLabel->
+  "In[248]:=",ExpressionUUID->"39248881-de53-42fe-bdc6-320aba8e5140"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"slangDataset", "//", "Dataset"}]], "Input",
+ CellChangeTimes->{{3.960285051170698*^9, 3.960285069654855*^9}},
+ CellLabel->
+  "In[249]:=",ExpressionUUID->"d205019d-0216-4ccf-96b7-cb495c795352"],
+
+Cell[BoxData[
+ TagBox[
+  TemplateBox[{
+    TagBox[
+     DynamicModuleBox[{
+      TypeSystem`NestedGrid`PackagePrivate`$state$$ = <|
+        "InitialData" -> 
+         TypeSystem`CacheKey[
+          6045508732032359124085858156367029162661573839638830346248], 
+         "AllowEmbedding" -> True, "InitialShape" -> 
+         TypeSystem`PackageScope`HeaderShape[<|{All, "Slang"} -> 
+            1, {All, "Description"} -> 1, {All, "Example"} -> 
+            1, {All, "Context"} -> 1|>, 
+           TypeSystem`PackageScope`Limited[
+            TypeSystem`PackageScope`ColumnShape[
+             TypeSystem`PackageScope`Limited[
+              
+              TypeSystem`PackageScope`RowShape[<|
+               "Slang" -> TypeSystem`PackageScope`AtomShape[78.4], 
+                "Description" -> TypeSystem`PackageScope`AtomShape[560.], 
+                "Example" -> TypeSystem`PackageScope`AtomShape[560.], 
+                "Context" -> TypeSystem`PackageScope`AtomShape[560.]|>], 
+              DirectedInfinity[1], 4, {All}]], 20, 
+            DirectedInfinity[1], {}]], "InitialType" -> TypeSystem`Vector[
+           
+           TypeSystem`Struct[{"Slang", "Description", "Example", "Context"}, {
+            
+             TypeSystem`Atom[String], 
+             TypeSystem`Atom[String], 
+             TypeSystem`Atom[String], 
+             TypeSystem`Atom[String]}], 1778], "Meta" -> <||>, "RowTarget" -> 
+         20, "ColumnTarget" -> 10, "Shape" -> 
+         TypeSystem`PackageScope`HeaderShape[<|{All, "Slang"} -> 
+            1, {All, "Description"} -> 1, {All, "Example"} -> 
+            1, {All, "Context"} -> 1|>, 
+           TypeSystem`PackageScope`Limited[
+            TypeSystem`PackageScope`ColumnShape[
+             TypeSystem`PackageScope`Limited[
+              
+              TypeSystem`PackageScope`RowShape[<|
+               "Slang" -> TypeSystem`PackageScope`AtomShape[78.4], 
+                "Description" -> TypeSystem`PackageScope`AtomShape[560.], 
+                "Example" -> TypeSystem`PackageScope`AtomShape[560.], 
+                "Context" -> TypeSystem`PackageScope`AtomShape[560.]|>], 
+              DirectedInfinity[1], 4, {All}]], 20, 
+            DirectedInfinity[1], {}]], "Type" -> TypeSystem`Vector[
+           
+           TypeSystem`Struct[{"Slang", "Description", "Example", "Context"}, {
+            
+             TypeSystem`Atom[String], 
+             TypeSystem`Atom[String], 
+             TypeSystem`Atom[String], 
+             TypeSystem`Atom[String]}], 1778], "Path" -> {}, 
+         "DisplayedRowCount" -> 20, "DisplayedColumnCount" -> 4, 
+         "DataRowCount" -> 1778, "DataColumnCount" -> 4, "SortPaths" -> {}, 
+         "SortDirections" -> {}, "HiddenItemsMap" -> Null, "UpdateType" -> 
+         1|>, TypeSystem`NestedGrid`PackagePrivate`$outputID$$, 
+       TypeSystem`NestedGrid`PackagePrivate`$path$$ = {}, 
+       TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 1, 
+       TypeSystem`NestedGrid`PackagePrivate`$hPos$$ = 1, 
+       TypeSystem`NestedGrid`PackagePrivate`$grid$$ = 
+       DynamicModule[{
+         TypeSystem`NestedGrid`PackagePrivate`renderedGrid = Deploy[
+            Style[
+             Grid[{{
+                Item[
+                 Pane[
+                  Annotation[
+                   EventHandler[
+                    MouseAppearance[
+                    Mouseover["Slang", 
+                    Style[
+                    "Slang", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    All, "Slang"}, 1]]], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                    All, "Slang"}, "ColumnHeader", True], "Mouse"], 
+                  ImageSize -> {{1, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+                 GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+                Item[
+                 Pane[
+                  Annotation[
+                   EventHandler[
+                    MouseAppearance[
+                    Mouseover["Description", 
+                    Style[
+                    "Description", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    All, "Description"}, 1]]], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                    All, "Description"}, "ColumnHeader", True], "Mouse"], 
+                  ImageSize -> {{1, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+                 GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+                Item[
+                 Pane[
+                  Annotation[
+                   EventHandler[
+                    MouseAppearance[
+                    Mouseover["Example", 
+                    Style[
+                    "Example", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    All, "Example"}, 1]]], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                    All, "Example"}, "ColumnHeader", True], "Mouse"], 
+                  ImageSize -> {{1, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+                 GrayLevel[0.95], Alignment -> {Left, Baseline}], 
+                Item[
+                 Pane[
+                  Annotation[
+                   EventHandler[
+                    MouseAppearance[
+                    Mouseover["Context", 
+                    Style[
+                    "Context", FontColor -> 
+                    RGBColor[
+                    0.27450980392156865`, 0.5372549019607843, 
+                    0.792156862745098]]], "LinkHand"], {"MouseClicked", 1} :> 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][{
+                    All, "Context"}, 1]]], 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{
+                    All, "Context"}, "ColumnHeader", True], "Mouse"], 
+                  ImageSize -> {{1, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], Background -> 
+                 GrayLevel[0.95], Alignment -> {Left, Baseline}]}, {
+                Item[
+                 Pane[
+                  Annotation["W", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["Shorthand for win", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["Got the job today, big W!", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Typically used in conversations to celebrate success, \
+achievements, or positive outcomes", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{1, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["L", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["Shorthand for loss/losing", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "I forgot my wallet at home, that\[CloseCurlyQuote]s an L.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Often used when referring to a failure or mishap, either \
+personally or generally", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{2, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["L+ratio", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Response to a comment or action on the internet that is \
+particularly bad.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Your tweet got 5 likes and 100 replies calling you out. L \
++ ratio.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Popularized on social media platforms to signify that \
+someone not only failed but also had their failure amplified through \
+backlash.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{3, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Dank", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["excellent or of very high quality", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["That meme is so dank!", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Commonly used in internet slang to refer to memes or humor \
+that are edgy or particularly funny.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{4, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Cheugy", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Derogatory term for Millennials. Used when millennials are \
+perceived to be excessively attempting to be trendy or stylish.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "That phrase is so cheugy, no one says that anymore.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Used to refer to things that were once popular but are now \
+considered pass\[EAcute], usually in a millennial vs. Gen Z context.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{5, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["TFW", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[" That feeling when", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "TFW you finish a big project and can finally relax", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Often paired with an image or caption to convey an emotion \
+or experience, mostly used in memes.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{6, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Woke", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[" being politically aware", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "He\[CloseCurlyQuote]s really woke about climate change.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Originally used in activist circles, it has since been \
+co-opted and sometimes used sarcastically.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{7, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Bop", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["An excellent song or album.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["This new track is a total bop!", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Commonly used in reference to music, especially upbeat \
+songs that are hard to resist dancing to.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{8, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["G.O.A.T", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[" The greatest of all time", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["Michael Jordan is the GOAT of basketball.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Frequently used in sports but has expanded to any field \
+where someone is considered the best.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{9, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Smol", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Something that is small, and in most cases exceptionally \
+adorable.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Look at that smol puppy, it\[CloseCurlyQuote]s adorable!", 
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Typically used when describing pets, babies, or anything \
+tiny and endearing.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{10, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Fam", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Fam is a shorter word for family, but don't be fooled\
+\[Dash] it can be used to describe your friends or the way Millennials use \
+\"bro\".", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "What\[CloseCurlyQuote]s good, fam? Long time no see!", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Used in casual conversation to address close friends or \
+acquaintances.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{11, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Glow up", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["a makeover or transformation from bad to good.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["She really had a glow up since high school.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Mostly used when someone has improved their looks, style, \
+or general confidence.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{12, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Stan", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Supporting something. Specifically used in some cases to \
+the idolatry support of personalities.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["I stan BTS so hard!", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Originally from an Eminem song, it refers to obsessive \
+fans but has since been reclaimed to mean intense admiration.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{13, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Ghosting", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "common amongst the earlier talking stages of a \
+relationship. Ghosting someone means you start ignoring them or stop texting \
+them back.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "We were talking for weeks, and then she just ghosted me.", 
+                   
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Used in online dating or friendships where one party \
+disappears with no warning.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{14, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Salty", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["Used when someone feels jealous", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "He\[CloseCurlyQuote]s just salty because he lost the game", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Often used in competitive environments or when someone is \
+overly upset about a minor issue.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{15, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Sip tea", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["Gossiping (spilling the tea)", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "I\[CloseCurlyQuote]m just here to sip tea and watch the \
+drama unfold.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Can be used in gossip situations or when someone is \
+staying out of a conflict but observing it.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{16, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Drip", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Another way of saying swag, drip is a term for a cool or \
+sexy trend or style.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["His drip today is on point.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Used in fashion circles to compliment someone\
+\[CloseCurlyQuote]s style or outfit.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{17, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Iykyk", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Acronym for \"If you know, you know.\" Used to describe \
+inside jokes.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "That hidden message in the movie was iconic. IYKYK.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Generally used to reference inside jokes or niche \
+knowledge.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{18, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Rent free", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "To be constantly thinking or upset about something.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation["That song is living rent-free in my head", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Commonly used for anything that someone keeps thinking \
+about obsessively.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{19, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Pane[
+                  Annotation["Catch these hands", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                    Key["Slang"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{78.4, Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Used to threaten physical combat with someone", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                    Key["Description"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "If you keep talking like that, you\[CloseCurlyQuote]re \
+gonna catch these hands.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                    Key["Example"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}], 
+                Item[
+                 Pane[
+                  Annotation[
+                  "Used in confrontational or playful situations when someone \
+is threatening physical action.", 
+                   TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][{20, 
+                    Key["Context"]}, "Item", False], "Mouse"], 
+                  ImageSize -> {{560., Full}, Automatic}, 
+                  ImageMargins -> {{5, 3}, {4, 5}}], 
+                 ItemSize -> {Full, Automatic}]}, {
+                Item[
+                 Deploy[
+                  Pane[
+                   Row[{
+                    Spacer[2], 
+                    Style[
+                    Row[{
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[True, 1778, 1], {1, 1778 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 0, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + (-20) 
+                    If[False, 1778, 1], {1, 1778 - -20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], " ", 
+                    Style[
+                    Mouseover[
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[1778, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]], 
+                    Style[
+                    Row[{"rows ", 1, "\[Dash]", 20, " of ", 
+                    Style[1778, FontWeight -> Bold]}], FontSize -> 
+                    9.333333333333332, FontColor -> 
+                    RGBColor[
+                    0.5098039215686274, 0.5098039215686274, 
+                    0.5098039215686274]]], ContextMenu -> {
+                    MenuItem["Hide", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 1, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 10 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 10, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 30 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 30, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show up to 100 Rows", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100, {}]], MenuEvaluator -> Automatic], 
+                    MenuItem["Show All", 
+                    KernelExecute[
+                    
+                    TypeSystem`NestedGrid`PackagePrivate`adjustLimits[{
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]}, 
+                    "Rows", 100000000, {}]], MenuEvaluator -> Automatic]}], 
+                    " ", 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35], BaseStyle -> 
+                    RGBColor[0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}]}, {5, 6.5}], 180 Degree, {
+                    9, 9}]}, ImageSize -> (1 -> 1), 
+                    ImagePadding -> {{0, 1}, {1, 0}}, BaselinePosition -> 
+                    Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[False, 1778, 1], {1, 1778 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None], 
+                    Button[
+                    MouseAppearance[
+                    Mouseover[
+                    Graphics[{{
+                    EdgeForm[None], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35], BaseStyle -> 
+                    RGBColor[0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843]], 
+                    Graphics[{{
+                    EdgeForm[
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549]], 
+                    FaceForm[None], 
+                    Rectangle[{0, 0}, {18, 18}, RoundingRadius -> 2]}, 
+                    Rotate[
+                    Translate[{
+                    CapForm[Round], 
+                    RGBColor[
+                    0.27450980392156865`, 0.5411764705882353, 
+                    0.796078431372549], 
+                    Line[{{0, 0}, {4, 5}, {8, 0}}], 
+                    Line[{{0, 5}, {8, 5}}]}, {5, 6.5}], 180 Degree, {9, 9}]}, 
+                    ImageSize -> (1 -> 1), ImagePadding -> {{0, 1}, {1, 0}}, 
+                    BaselinePosition -> Scaled[0.35]]], "LinkHand"], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`checkInteractivity[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$ = 
+                    Clip[TypeSystem`NestedGrid`PackagePrivate`$vPos$$ + 
+                    20 If[True, 1778, 1], {1, 1778 - 20 + 1}]; 
+                    TypeSystem`NestedGrid`PackagePrivate`updateState[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]], True][
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$]], 
+                    Appearance -> None]}], ContextMenu -> {}]}], 
+                   ImageMargins -> {{0, -1}, {-1, 1}}]], Background -> 
+                 RGBColor[
+                  0.9764705882352941, 0.9764705882352941, 0.9764705882352941],
+                  Alignment -> {Left, Top}], SpanFromLeft, SpanFromLeft, 
+                SpanFromLeft}}, 
+              BaseStyle -> {
+               ContextMenu -> 
+                Dynamic[
+                 TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+                  Which[TypeSystem`NestedGrid`PackagePrivate`$lastOutputID =!= 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$], {}, 
+                    TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger === 
+                    TypeSystem`NestedGrid`PackagePrivate`$\
+lastContextMenuTrigger, TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu,
+                     True, TypeSystem`NestedGrid`PackagePrivate`$\
+lastContextMenuTrigger = 
+                    TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger; 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastContextMenu = 
+                    Block[{TypeSystem`NestedGrid`PackagePrivate`$\
+globalScrollPos = {TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$}}, 
+                    
+                    With[{TypeSystem`NestedGrid`PackagePrivate`lastPath$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`$\
+lastPathIsLeafHeader, TypeSystem`NestedGrid`PackagePrivate`headerHidden$ = And[
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`$lastPathType, 
+                    Alternatives["RowHeader", "ColumnHeader"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]], 
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`allHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHidden$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`anyHiddenQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ = 
+                    TypeSystem`NestedGrid`PackagePrivate`columnSortDirection[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortPaths"], 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$[
+                    "SortDirections"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`haveData$ = Not[
+                    FailureQ[
+                    TypeSystem`NestedGrid`PackagePrivate`datasetInitialData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$]]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$ = Not[
+                    FreeQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, Keys]]}, 
+                    Join[{
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`anyHidden$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$], 
+                    Nothing, 
+                    MenuItem[
+                    "Show " <> Which[
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "remove"]], MenuEvaluator -> Automatic]], 
+                    If[
+                    Or[
+                    Not[TypeSystem`NestedGrid`PackagePrivate`haveData$], 
+                    TypeSystem`NestedGrid`PackagePrivate`pathEmptyQ[
+                    TypeSystem`NestedGrid`PackagePrivate`$lastPath, 
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+                    TypeSystem`NestedGrid`PackagePrivate`isKeyDummy$, 
+                    And[
+                    TypeSystem`NestedGrid`PackagePrivate`allHidden$, 
+                    TypeSystem`NestedGrid`PackagePrivate`headerHidden$]], 
+                    Nothing, 
+                    MenuItem[
+                    "Hide " <> Which[
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "Item", "", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "RowHeader", "Row", 
+                    TypeSystem`NestedGrid`PackagePrivate`lastPathType$ == 
+                    "ColumnHeader", "Column", True, ""], 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateHiddenItems[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, "add"]], 
+                    MenuEvaluator -> Automatic]], Delimiter}, 
+                    If[
+                    And[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MatchQ[TypeSystem`NestedGrid`PackagePrivate`lastPathType$, 
+                    Alternatives["ColumnHeader", "KeyDummy"]], 
+                    TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+                    Not[TypeSystem`NestedGrid`PackagePrivate`allHidden$]], {
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Ascending", 
+                    MenuItem["Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Ascending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    "Descending", 
+                    MenuItem["Reverse Sort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, 
+                    "Descending"]], MenuEvaluator -> Automatic], Nothing], 
+                    If[
+                    TypeSystem`NestedGrid`PackagePrivate`sortDirection$ =!= 
+                    None, 
+                    MenuItem["Unsort", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`updateSort[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`localHold[
+                    TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                    TypeSystem`NestedGrid`PackagePrivate`lastPath$, None]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter}, {}], {
+                    MenuItem["Copy Position to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Copy Data to Clipboard", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`copyClip]], 
+                    MenuEvaluator -> Automatic], Nothing], Delimiter, 
+                    MenuItem["Paste Position in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentPosition[
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], 
+                    If[TypeSystem`NestedGrid`PackagePrivate`haveData$, 
+                    MenuItem["Paste Data in New Cell", 
+                    KernelExecute[
+                    TypeSystem`NestedGrid`PackagePrivate`toCurrentData[
+                    TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                    TypeSystem`NestedGrid`PackagePrivate`cellPaste]], 
+                    MenuEvaluator -> Automatic], Nothing]}]]]]], FontFamily -> 
+                "Source Sans Pro", FontSize -> 14, FontWeight -> Plain}, 
+              Dividers -> All, FrameStyle -> GrayLevel[0.7490196078431373], 
+              Spacings -> {0, 0}, Alignment -> Left, 
+              BaseStyle -> {
+               FontFamily -> "Source Sans Pro", FontSize -> 14, FontWeight -> 
+                Plain}], LineBreakWithin -> False, ContextMenu -> {}, 
+             NumberMarks -> False, ShowAutoStyles -> False]], 
+          TypeSystem`NestedGrid`PackagePrivate`initialQ = True}, 
+         Dynamic[
+          TypeSystem`NestedGrid`PackagePrivate`setupViewPath[
+          TypeSystem`NestedGrid`PackagePrivate`$path$$, If[
+             Not[TypeSystem`NestedGrid`PackagePrivate`initialQ], 
+             
+             Module[{TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = $Failed, 
+               TypeSystem`NestedGrid`PackagePrivate`tmpData$ = 
+               TypeSystem`NestedGrid`PackagePrivate`datasetData[
+                TypeSystem`NestedGrid`PackagePrivate`$state$$]}, 
+              TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = If[
+                 FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpData$], 
+                 TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
+                 TypeSystem`NestedGrid`PackagePrivate`renderGrid[
+                 TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+                  TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+                  TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+                  TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+                  TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+                  TypeSystem`NestedGrid`PackagePrivate`localHold[
+                  TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+                 TypeSystem`NestedGrid`PackagePrivate`tmpData$]]; If[
+                Not[
+                 FailureQ[TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]], 
+                TypeSystem`NestedGrid`PackagePrivate`renderedGrid = 
+                TypeSystem`NestedGrid`PackagePrivate`tmpGrid$]; Null]]; 
+           TypeSystem`NestedGrid`PackagePrivate`initialQ = False; 
+           TypeSystem`NestedGrid`PackagePrivate`$vPos$$; 
+           TypeSystem`NestedGrid`PackagePrivate`$hPos$$; If[
+             FailureQ[TypeSystem`NestedGrid`PackagePrivate`renderedGrid], 
+             TypeSystem`SparseGrid[
+              TypeSystem`H["(data no longer present)"]], 
+             TypeSystem`NestedGrid`PackagePrivate`renderedGrid]], 
+          TrackedSymbols :> {
+           TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$hPos$$}], 
+         DynamicModuleValues :> {}], 
+       TypeSystem`NestedGrid`PackagePrivate`$topBar$$ = Dynamic[
+         TypeSystem`NestedGrid`PackagePrivate`makeFramedBar[
+          TypeSystem`PackageScope`SubViewPathbar[
+          TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+           TypeSystem`NestedGrid`PackagePrivate`updateState[
+           TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$path$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$vPos$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$hPos$$, 
+            TypeSystem`NestedGrid`PackagePrivate`$grid$$, 
+            TypeSystem`NestedGrid`PackagePrivate`localHold[
+            TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]]], 
+         TrackedSymbols :> {TypeSystem`NestedGrid`PackagePrivate`$path$$}], 
+       TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$ = Dynamic[
+         Replace[
+          Replace[
+          TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$, {
+           TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+              TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][Null, 
+              Blank[]] -> "", 
+            TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+              TypeSystem`NestedGrid`PackagePrivate`$outputID$$]][
+              Pattern[TypeSystem`NestedGrid`PackagePrivate`path$, 
+               Blank[]], 
+              Pattern[TypeSystem`NestedGrid`PackagePrivate`pathType$, 
+               Blank[]], 
+              Pattern[TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$, 
+               Blank[]]] :> (
+             Increment[
+              TypeSystem`NestedGrid`PackagePrivate`$contextMenuTrigger]; 
+             TypeSystem`NestedGrid`PackagePrivate`$lastPath = 
+              TypeSystem`NestedGrid`PackagePrivate`path$; 
+             TypeSystem`NestedGrid`PackagePrivate`$lastPathType = 
+              TypeSystem`NestedGrid`PackagePrivate`pathType$; 
+             TypeSystem`NestedGrid`PackagePrivate`$lastPathIsLeafHeader = 
+              TypeSystem`NestedGrid`PackagePrivate`isLeafHeader$; 
+             TypeSystem`NestedGrid`PackagePrivate`$lastOutputID = 
+              TypeSystem`NestedGrid`PackagePrivate`localHold[
+               TypeSystem`NestedGrid`PackagePrivate`$outputID$$]; 
+             TypeSystem`NestedGrid`PackagePrivate`makePathTrail[
+              TypeSystem`NestedGrid`PackagePrivate`path$, 
+               TypeSystem`NestedGrid`PackagePrivate`makePathElements]), Null :> 
+            Spacer[10], Blank[] :> Spacer[10]}], 
+          Pattern[TypeSystem`NestedGrid`PackagePrivate`bar, 
+            Except[
+             Alternatives[
+              Blank[Spacer], ""]]] :> 
+          TypeSystem`NestedGrid`PackagePrivate`makeFramedPathbar[
+           TypeSystem`NestedGrid`PackagePrivate`bar]], 
+         TrackedSymbols :> {
+          TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$}], 
+       TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = Null}, 
+      DynamicWrapperBox[
+       DynamicBox[
+        ToBoxes[
+         Dataset`DatasetContent[
+         2, "Path" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$path$$], 
+          "Grid" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$grid$$], 
+          "State" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$state$$], 
+          "VPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$vPos$$], 
+          "HPos" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$hPos$$], 
+          "TopBar" -> Hold[TypeSystem`NestedGrid`PackagePrivate`$topBar$$], 
+          "BottomBar" -> 
+          Hold[TypeSystem`NestedGrid`PackagePrivate`$bottomBar$$], "OutputID" -> 
+          Hold[
+            TypeSystem`NestedGrid`PackagePrivate`localHold[
+            TypeSystem`NestedGrid`PackagePrivate`$outputID$$]]], 
+         StandardForm], 
+        ImageSizeCache -> {
+         2286.9259999999995`, {298.25030114746096`, 303.98223474121096`}}, 
+        TrackedSymbols :> {
+         TypeSystem`NestedGrid`PackagePrivate`$state$$, 
+          TypeSystem`NestedGrid`PackagePrivate`$grid$$}], 
+       TypeSystem`NestedGrid`PackagePrivate`mouseAnnotation$$ = 
+       MouseAnnotation[], 
+       ImageSizeCache -> {
+        2286.9259999999995`, {298.25030114746096`, 303.98223474121096`}}], 
+      BaseStyle -> {LineBreakWithin -> False}, DynamicModuleValues :> {}, 
+      Initialization :> (TypeSystem`NestedGrid`PackagePrivate`$outputID$$ = 
+       CreateUUID[]), 
+      UnsavedVariables :> {TypeSystem`NestedGrid`PackagePrivate`$outputID$$}],
+      Deploy, DefaultBaseStyle -> "Deploy"]},
+   "CopyTag",
+   DisplayFunction->(#& ),
+   InterpretationFunction->("Dataset[<>]"& )],
+  False,
+  BoxID -> 6045508732032359124085858156367029162661573839638830346248,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.9602850574769793`*^9, 3.960285085504697*^9}},
+ CellLabel->
+  "Out[249]=",ExpressionUUID->"de3cf9f7-4401-4e0c-b505-067432b06f86"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["slang"], "Input",
+ CellChangeTimes->{{3.960283642904807*^9, 3.9602836441336927`*^9}},
+ CellLabel->
+  "In[233]:=",ExpressionUUID->"7049ab61-7df9-4ba2-8608-a2263bd8fd21"],
+
+Cell[BoxData[
+ TemplateBox[<|"shortenedBoxes" -> TagBox[
+     RowBox[{"{", 
+       RowBox[{
+         RowBox[{"{", 
+           
+           RowBox[{"\"Slang\"", ",", "\"Description\"", ",", "\"Example\"", 
+             ",", "\"Context\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"W\"", ",", "\"Shorthand for win\"", ",", 
+             "\"Got the job today, big W!\"", ",", 
+             "\"Typically used in conversations to celebrate success, \
+achievements, or positive outcomes\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"L\"", ",", "\"Shorthand for loss/losing\"", ",", 
+             "\"I forgot my wallet at home, that\[CloseCurlyQuote]s an L.\"", 
+             ",", "\"Often used when referring to a failure or mishap, either \
+personally or generally\""}], "}"}], ",", 
+         TemplateBox[{"1774"}, "OutputSizeLimit`Skeleton"], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZOT\"", ",", "\"Zero tolerance\"", ",", 
+             "\"Our school has a ZOT policy for bullying.\"", ",", 
+             "\"Refers to a strict policy where certain behaviors, such as \
+violence or harassment, are not tolerated under any circumstances.\""}], 
+           "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZUP\"", ",", "\"What\[CloseCurlyQuote]s up?\"", ",", 
+             "\"Hey, ZUP with you today?\"", ",", 
+             "\"A casual way to ask how someone is doing or what\
+\[CloseCurlyQuote]s going on.\""}], "}"}], ",", 
+         RowBox[{"{", 
+           
+           RowBox[{"\"ZZZZ\"", ",", "\"Sleeping\"", ",", 
+             "\"I was so tired, I went to bed and was out in seconds, \
+ZZZZ.\"", ",", 
+             "\"Represents sleep or someone being asleep, often used \
+humorously.\""}], "}"}]}], "}"}], Short[#, 16]& ], "line" -> 233, "sessionID" -> 
+   17766153405877121193, "byteCount" -> 568312, "size" -> 16, "stored" -> 
+   False, "expr" -> Missing["NotStored"], "wrap" -> OutputSizeLimit`Defer, 
+   "version" -> 1|>,
+  "OutputSizeLimitTemplate"]], "Output",
+ CellChangeTimes->{3.960283644700107*^9},
+ CellLabel->
+  "Out[233]=",ExpressionUUID->"ecf1145e-13f1-4b83-9742-51f6a152f88e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"slang", "[", 
+  RowBox[{"[", 
+   RowBox[{"All", ",", "1"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.960283721449534*^9, 3.960283738628583*^9}},
+ CellLabel->
+  "In[236]:=",ExpressionUUID->"f8e1c430-d88d-4c37-83b5-28197e840722"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Slang\"\>", ",", "\<\"W\"\>", ",", "\<\"L\"\>", 
+   ",", "\<\"L+ratio\"\>", ",", "\<\"Dank\"\>", ",", "\<\"Cheugy\"\>", 
+   ",", "\<\"TFW\"\>", ",", "\<\"Woke\"\>", ",", "\<\"Bop\"\>", 
+   ",", "\<\"G.O.A.T\"\>", ",", "\<\"Smol\"\>", ",", "\<\"Fam\"\>", 
+   ",", "\<\"Glow up\"\>", ",", "\<\"Stan\"\>", ",", "\<\"Ghosting\"\>", 
+   ",", "\<\"Salty\"\>", ",", "\<\"Sip tea\"\>", ",", "\<\"Drip\"\>", 
+   ",", "\<\"Iykyk\"\>", ",", "\<\"Rent free\"\>", 
+   ",", "\<\"Catch these hands\"\>", ",", "\<\"Drag\"\>", 
+   ",", "\<\"Bussin\[CloseCurlyQuote]\"\>", ",", "\<\"Snatched\"\>", 
+   ",", "\<\"Cancel culture\"\>", ",", "\<\"Ffs\"\>", ",", "\<\"e-boy\"\>", 
+   ",", "\<\"e-girl\"\>", ",", "\<\"Big yikes\"\>", ",", "\<\"Finna\"\>", 
+   ",", "\<\"cap\"\>", ",", "\<\"High-key\"\>", ",", "\<\"Simp\"\>", 
+   ",", "\<\"Camp\"\>", ",", "\<\"Snack\"\>", 
+   ",", "\<\"Take several seats\"\>", ",", "\<\"Sheesh\"\>", 
+   ",", "\<\"Hits different\"\>", ",", "\<\"Bet\"\>", ",", "\<\"Periodt\"\>", 
+   ",", "\<\"Finesse\"\>", ",", "\<\"I\[CloseCurlyQuote]m weak\"\>", 
+   ",", "\<\"Main character\"\>", ",", "\<\"Sis\"\>", 
+   ",", "\<\"Sending me\"\>", ",", "\<\"Gaup\"\>", 
+   ",", "\<\"This ain\[CloseCurlyQuote]t it, chief\"\>", ",", "\<\"Extra\"\>",
+    ",", "\<\"Clapback\"\>", ",", "\<\"@ me\"\>", ",", "\<\"Asl\"\>", 
+   ",", "\<\"Bang 30s\"\>", ",", "\<\"Based\"\>", 
+   ",", "\<\"Beat your face\"\>", ",", "\<\"Big mad\"\>", 
+   ",", "\<\"Body count\"\>", ",", "\<\"Boujee\"\>", ",", "\<\"Bussy\"\>", 
+   ",", "\<\"Cringe\"\>", ",", "\<\"Ded\"\>", ",", "\<\"Facts\"\>", 
+   ",", "\<\"Glow-up\"\>", ",", "\<\"I oop\"\>", 
+   ",", "\<\"t's giving\[Ellipsis]\"\>", ",", "\<\"Lit\"\>", 
+   ",", "\<\"Mid\"\>", ",", "\<\"Not you\"\>", ",", "\<\"NPC\"\>", 
+   ",", "\<\"OK boomer\"\>", ",", "\<\"On god\"\>", ",", "\<\"Ratio\"\>", 
+   ",", "\<\"Rizz\"\>", ",", "\<\"Sksksk\"\>", ",", "\<\"Slaps\"\>", 
+   ",", "\<\"Sus\"\>", ",", "\<\"Slay\"\>", ",", "\<\"Tea\"\>", 
+   ",", "\<\"Understood the assignment\"\>", ",", "\<\"Valid\"\>", 
+   ",", "\<\"Vibe Check\"\>", ",", "\<\"Vibing\"\>", ",", "\<\"Wig\"\>", 
+   ",", "\<\"Word\"\>", ",", "\<\"Af\"\>", ",", "\<\"Big brain\"\>", 
+   ",", "\<\"Chad\"\>", ",", "\<\"Clapped\"\>", ",", "\<\"Clown\"\>", 
+   ",", "\<\"Cringy\"\>", ",", "\<\"fomo\"\>", ",", "\<\"Fr\"\>", 
+   ",", "\<\"I can\[CloseCurlyQuote]t even\"\>", ",", "\<\"Ion\"\>", 
+   ",", "\<\"IRL\"\>", ",", "\<\"Karen\"\>", ",", "\<\"Low key\"\>", 
+   ",", "\<\"Mom\"\>", ",", "\<\"Dad\"\>", ",", "\<\"NGL\"\>", 
+   ",", "\<\"Pick me girl\"\>", ",", "\<\"Boomer\"\>", 
+   ",", "\<\"Sleeping on\"\>", ",", "\<\"Shade\"\>", ",", "\<\"Shook\"\>", 
+   ",", "\<\"Smh\"\>", ",", "\<\"TBH\"\>", ",", "\<\"Thirsty\"\>", 
+   ",", "\<\"Thirst trap\"\>", ",", "\<\"Yas\"\>", ",", "\<\"Yeet\"\>", 
+   ",", "\<\"ick\"\>", ",", "\<\"naur\"\>", ",", "\<\"Say less\"\>", 
+   ",", "\<\"Unserious\"\>", ",", "\<\"Gagged\"\>", ",", "\<\"Ate\"\>", 
+   ",", "\<\"Poggers\"\>", ",", "\<\"Heather\"\>", ",", "\<\"Wth\"\>", 
+   ",", "\<\"Flex\"\>", ",", "\<\"Gucci\"\>", ",", "\<\"Hot girl summer\"\>", 
+   ",", "\<\"Sturdy\"\>", ",", "\<\"Skill issue\"\>", ",", "\<\"TNTL\"\>", 
+   ",", "\<\"G2G\"\>", ",", "\<\"YNK\"\>", ",", "\<\"CSL\"\>", 
+   ",", "\<\"GMTA\"\>", ",", "\<\"IMO\"\>", ",", "\<\"IMOH\"\>", 
+   ",", "\<\"JK\"\>", ",", "\<\"Bae\"\>", ",", "\<\"SSDD\"\>", 
+   ",", "\<\"WYWH\"\>", ",", "\<\"Benching\"\>", ",", "\<\"Breadcumbing\"\>", 
+   ",", "\<\"Cuffing\"\>", ",", "\<\"DTR\"\>", ",", "\<\"Gaslighting\"\>", 
+   ",", "\<\"ILY\"\>", ",", "\<\"Pink flags\"\>", ",", "\<\"Smash\"\>", 
+   ",", "\<\"Situationship\"\>", ",", "\<\"Zaddy\"\>", 
+   ",", "\<\"Zombie-ing\"\>", ",", "\<\"AFK\"\>", ",", "\<\"ASAP\"\>", 
+   ",", "\<\"ATK\"\>", ",", "\<\"ATM\"\>", ",", "\<\"A3\"\>", 
+   ",", "\<\"BAK\"\>", ",", "\<\"BBL\"\>", ",", "\<\"BBS\"\>", 
+   ",", "\<\"BFN\"\>", ",", "\<\"B4N\"\>", ",", "\<\"BRB\"\>", 
+   ",", "\<\"BRT\"\>", ",", "\<\"BTW\"\>", ",", "\<\"B4\"\>", 
+   ",", "\<\"B4N\"\>", ",", "\<\"CU\"\>", ",", "\<\"CUL8R\"\>", 
+   ",", "\<\"CYA\"\>", ",", "\<\"FAQ\"\>", ",", "\<\"FC\"\>", 
+   ",", "\<\"FWIW\"\>", ",", "\<\"FYI\"\>", ",", "\<\"GAL\"\>", 
+   ",", "\<\"GG\"\>", ",", "\<\"GN\"\>", ",", "\<\"GMTA\"\>", 
+   ",", "\<\"GR8\"\>", ",", "\<\"G9\"\>", ",", "\<\"IC\"\>", 
+   ",", "\<\"ICQ\"\>", ",", "\<\"ILU\"\>", ",", "\<\"IMHO\"\>", 
+   ",", "\<\"IMO\"\>", ",", "\<\"IOW\"\>", ",", "\<\"IRL\"\>", 
+   ",", "\<\"KISS\"\>", ",", "\<\"LDR\"\>", ",", "\<\"LMAO\"\>", 
+   ",", "\<\"LOL\"\>", ",", "\<\"LTNS\"\>", ",", "\<\"L8R\"\>", 
+   ",", "\<\"MTE\"\>", ",", "\<\"M8\"\>", ",", "\<\"NRN\"\>", 
+   ",", "\<\"OIC\"\>", ",", "\<\"PITA\"\>", ",", "\<\"PRT\"\>", 
+   ",", "\<\"PRW\"\>", ",", "\<\"QPSA?\"\>", ",", "\<\"ROFL\"\>", 
+   ",", "\<\"ROFLOL\"\>", ",", "\<\"ROTFLMAO\"\>", ",", "\<\"SK8\"\>", 
+   ",", "\<\"STATS\"\>", ",", "\<\"ASL\"\>", ",", "\<\"THX\"\>", 
+   ",", "\<\"TTFN\"\>", ",", "\<\"TTYL\"\>", ",", "\<\"U\"\>", 
+   ",", "\<\"U2\"\>", ",", "\<\"U4E\"\>", ",", "\<\"WB\"\>", 
+   ",", "\<\"WTF\"\>", ",", "\<\"WTG\"\>", ",", "\<\"WUF\"\>", 
+   ",", "\<\"7K\"\>", ",", "\<\"TFW \"\>", ",", "\<\"MFW \"\>", 
+   ",", "\<\"MRW \"\>", ",", "\<\"IFYP \"\>", ",", "\<\"LOL \"\>", 
+   ",", "\<\"TNTL \"\>", ",", "\<\"JK \"\>", ",", "\<\"IDC \"\>", 
+   ",", "\<\"ILY \"\>", ",", "\<\"IMU \"\>", ",", "\<\"ADIH \"\>", 
+   ",", "\<\"IDC \"\>", ",", "\<\"ZZZ \"\>", ",", "\<\"WYWH \"\>", 
+   ",", "\<\"TIME \"\>", ",", "\<\"BAE \"\>", ",", "\<\"FIMH \"\>", 
+   ",", "\<\"BSAAW \"\>", ",", "\<\"BWL \"\>", ",", "\<\"LMAO \"\>", 
+   ",", "\<\"BFF\"\>", ",", "\<\"CSL \"\>", ",", 
+   RowBox[{"Missing", "[", "\<\"NotAvailable\"\>", "]"}], ",", "\<\"?4U\"\>", 
+   ",", "\<\";S\"\>", ",", "\<\"^^\"\>", ",", "\<\"<3\"\>", 
+   ",", "\<\"</3\"\>", ",", "\<\"<3333\"\>", ",", "\<\"@TEOTD\"\>", 
+   ",", "\<\"0.02\"\>", ",", "\<\"1TG, 2TG\"\>", ",", "\<\"1UP\"\>", 
+   ",", "\<\"121\"\>", ",", "\<\"1337\"\>", ",", "\<\"143\"\>", 
+   ",", "\<\"1432\"\>", ",", "\<\"14AA41\"\>", ",", "\<\"182\"\>", 
+   ",", "\<\"19\"\>", ",", "\<\"10M\"\>", ",", "\<\"10X\"\>", 
+   ",", "\<\"10Q\"\>", ",", "\<\"1CE\"\>", ",", "\<\"1DR\"\>", 
+   ",", "\<\"1NAM\"\>", ",", "\<\"2\"\>", ",", "\<\"20\"\>", 
+   ",", "\<\"2B\"\>", ",", "\<\"2EZ\"\>", ",", "\<\"2G2BT\"\>", 
+   ",", "\<\"2M2H\"\>", ",", "\<\"2MI\"\>", ",", "\<\"2MOR\"\>", 
+   ",", "\<\"2MORO\"\>", ",", "\<\"2N8\"\>", ",", "\<\"2NTE\"\>", 
+   ",", "\<\"411\"\>", ",", "\<\"404\"\>", ",", "\<\"420\"\>", 
+   ",", "\<\"459\"\>", ",", "\<\"4AO\"\>", ",", "\<\"4COL\"\>", 
+   ",", "\<\"4EAE\"\>", ",", "\<\"4EVA\"\>", ",", "\<\"4NR\"\>", 
+   ",", "\<\"4SALE\"\>", ",", "\<\"^5\"\>", ",", "\<\"511\"\>", 
+   ",", "\<\"555\"\>", ",", "\<\"55555\"\>", ",", "\<\"55555\"\>", 
+   ",", "\<\"6Y\"\>", ",", "\<\"7K\"\>", ",", "\<\"81\"\>", 
+   ",", "\<\"831\"\>", ",", "\<\"86\"\>", ",", "\<\"88\"\>", 
+   ",", "\<\"88\"\>", ",", "\<\"9\"\>", ",", "\<\"*s*\"\>", 
+   ",", "\<\"*w*\"\>", ",", "\<\"A3\"\>", ",", "\<\"AA\"\>", 
+   ",", "\<\"AA\"\>", ",", "\<\"AA\"\>", ",", "\<\"AAF\"\>", 
+   ",", "\<\"AAF\"\>", ",", "\<\"AAK\"\>", ",", "\<\"AAK\"\>", 
+   ",", "\<\"AAMOF\"\>", ",", "\<\"AAMOI\"\>", ",", "\<\"AAP\"\>", 
+   ",", "\<\"AAR\"\>", ",", "\<\"AAS\"\>", ",", "\<\"AASHTA\"\>", 
+   ",", "\<\"AATK\"\>", ",", "\<\"AAYF\"\>", ",", "\<\"ABBR\"\>", 
+   ",", "\<\"ABC\"\>", ",", "\<\"ABD\"\>", ",", "\<\"ABT\"\>", 
+   ",", "\<\"ABT2\"\>", ",", "\<\"ABTA\"\>", ",", "\<\"ABU\"\>", 
+   ",", "\<\"AC\"\>", ",", "\<\"ACC\"\>", ",", "\<\"ACD\"\>", 
+   ",", "\<\"ACDNT\"\>", ",", "\<\"ACE\"\>", ",", "\<\"ACK\"\>", 
+   ",", "\<\"ACPT\"\>", ",", "\<\"ACQSTN\"\>", ",", "\<\"ADAD\"\>", 
+   ",", "\<\"ADBB\"\>", ",", "\<\"ADD\"\>", ",", "\<\"ADDY\"\>", 
+   ",", "\<\"ADIH\"\>", ",", "\<\"ADIP\"\>", ",", "\<\"ADMIN\"\>", 
+   ",", "\<\"ADMINR\"\>", ",", "\<\"ADN\"\>", ",", "\<\"ADR\"\>", 
+   ",", "\<\"AE\"\>", ",", "\<\"AEAP\"\>", ",", "\<\"AF\"\>", 
+   ",", "\<\"AF\"\>", ",", "\<\"AF\"\>", ",", "\<\"AFC\"\>", 
+   ",", "\<\"AFAIAA\"\>", ",", "\<\"AFAIC\"\>", ",", "\<\"AFAIK\"\>", 
+   ",", "\<\"AFAIUI\"\>", ",", "\<\"AFAP\"\>", ",", "\<\"AFFA\"\>", 
+   ",", "\<\"AFJ\"\>", ",", "\<\"AFK\"\>", ",", "\<\"AFZ\"\>", 
+   ",", "\<\"AFPOE\"\>", ",", "\<\"AGI\"\>", ",", "\<\"AH\"\>", 
+   ",", "\<\"AIAMU\"\>", ",", "\<\"AIGHT\"\>", ",", "\<\"AIR\"\>", 
+   ",", "\<\"AISB\"\>", ",", "\<\"AISB\"\>", ",", "\<\"AISI\"\>", 
+   ",", "\<\"AITR\"\>", ",", "\<\"AKA\"\>", ",", "\<\"ALCON\"\>", 
+   ",", "\<\"ALOL\"\>", ",", "\<\"AMA\"\>", ",", "\<\"AMAP\"\>", 
+   ",", "\<\"AMBW\"\>", ",", "\<\"AML\"\>", ",", "\<\"AMOF\"\>", 
+   ",", "\<\"A/N\"\>", ",", "\<\"AO\"\>", ",", "\<\"AOC\"\>", 
+   ",", "\<\"AOE\"\>", ",", "\<\"AOM\"\>", ",", "\<\"AOM\"\>", 
+   ",", "\<\"AOTA\"\>", ",", "\<\"AOYP\"\>", ",", "\<\"APAC\"\>", 
+   ",", "\<\"APP\"\>", ",", "\<\"APP\"\>", ",", "\<\"AQAP\"\>", 
+   ",", "\<\"ARC\"\>", ",", "\<\"ARE\"\>", ",", "\<\"ARG\"\>", 
+   ",", "\<\"ASIG\"\>", ",", "\<\"ASAP\"\>", ",", "\<\"A/S/L\"\>", 
+   ",", "\<\"ASL\"\>", ",", "\<\"ASLA\"\>", ",", "\<\"AT\"\>", 
+   ",", "\<\"ATB\"\>", ",", "\<\"ATEOTD\"\>", ",", "\<\"ATM\"\>", 
+   ",", "\<\"ATSITS\"\>", ",", "\<\"ATSL\"\>", ",", "\<\"AWC\"\>", 
+   ",", "\<\"AWESO\"\>", ",", "\<\"AWOL\"\>", ",", "\<\"AWOL\"\>", 
+   ",", "\<\"AYDY\"\>", ",", "\<\"AYBABTU\"\>", ",", "\<\"AYEC\"\>", 
+   ",", "\<\"AYOR\"\>", ",", "\<\"AYSOS\"\>", ",", "\<\"AYS\"\>", 
+   ",", "\<\"AYT\"\>", ",", "\<\"AYTMTB\"\>", ",", "\<\"AYV\"\>", 
+   ",", "\<\"AYW\"\>", ",", "\<\"AYW\"\>", ",", "\<\"AZN\"\>", 
+   ",", "\<\"B\"\>", ",", "\<\"B\"\>", ",", "\<\"B&\"\>", ",", "\<\"B2B\"\>", 
+   ",", "\<\"B2C\"\>", ",", "\<\"B2W\"\>", ",", "\<\"B8\"\>", 
+   ",", "\<\"B9\"\>", ",", "\<\"B/F\"\>", ",", "\<\"B/G\"\>", 
+   ",", "\<\"B4\"\>", ",", "\<\"B4N\"\>", ",", "\<\"BAG\"\>", 
+   ",", "\<\"BA\"\>", ",", "\<\"BAE\"\>", ",", "\<\"BAE\"\>", 
+   ",", "\<\"BAFO\"\>", ",", "\<\"BAK\"\>", ",", "\<\"BAM\"\>", 
+   ",", "\<\"BAMF\"\>", ",", "\<\"BAO\"\>", ",", "\<\"BAS\"\>", 
+   ",", "\<\"BASIC\"\>", ",", "\<\"BASOR\"\>", ",", "\<\"BAU\"\>", 
+   ",", "\<\"BAY\"\>", ",", "\<\"BB\"\>", ",", "\<\"BB\"\>", 
+   ",", "\<\"BB\"\>", ",", "\<\"BBC\"\>", ",", "\<\"BBIAB\"\>", 
+   ",", "\<\"BBIAF\"\>", ",", "\<\"BBIAM\"\>", ",", "\<\"BBIAS\"\>", 
+   ",", "\<\"BBL\"\>", ",", "\<\"BBN\"\>", ",", "\<\"BBQ\"\>", 
+   ",", "\<\"BBS\"\>", ",", "\<\"BBT\"\>", ",", "\<\"BC\"\>", 
+   ",", "\<\"B/C\"\>", ",", "\<\"BC\"\>", ",", "\<\"BCNU\"\>", 
+   ",", "\<\"BCOS\"\>", ",", "\<\"BCO\"\>", ",", "\<\"BCOY\"\>", 
+   ",", "\<\"BD\"\>", ",", "\<\"BDAY\"\>", ",", "\<\"B-DAY\"\>", 
+   ",", "\<\"BDN\"\>", ",", "\<\"BEG\"\>", ",", "\<\"BELF\"\>", 
+   ",", "\<\"BF\"\>", ",", "\<\"BF\"\>", ",", "\<\"BFAW\"\>", 
+   ",", "\<\"BF2\"\>", ",", "\<\"BF\"\>", ",", "\<\"BFF\"\>", 
+   ",", "\<\"BFFL\"\>", ",", "\<\"BFFLNMW\"\>", ",", "\<\"BFD\"\>", 
+   ",", "\<\"BFG\"\>", ",", "\<\"BFFN\"\>", ",", "\<\"BFN\"\>", 
+   ",", "\<\"BG\"\>", ",", "\<\"BGWM\"\>", ",", "\<\"BHL8\"\>", 
+   ",", "\<\"BIB\"\>", ",", "\<\"BIBO\"\>", ",", "\<\"BIC\"\>", 
+   ",", "\<\"BIF\"\>", ",", "\<\"BIH\"\>", ",", "\<\"BIL\"\>", 
+   ",", "\<\"BIO\"\>", ",", "\<\"BION\"\>", ",", "\<\"BIOYA\"\>", 
+   ",", "\<\"BIOYN\"\>", ",", "\<\"BIS\"\>", ",", "\<\"BISFLATM\"\>", 
+   ",", "\<\"BITMT\"\>", ",", "\<\"BL\"\>", ",", "\<\"BLNT\"\>", 
+   ",", "\<\"Bloke\"\>", ",", "\<\"BM\"\>", ",", "\<\"BME\"\>", 
+   ",", "\<\"BM&Y\"\>", ",", "\<\"BOB\"\>", ",", "\<\"BN\"\>", 
+   ",", "\<\"BOE\"\>", ",", "\<\"BOHICA\"\>", ",", "\<\"BOL\"\>", 
+   ",", "\<\"BOM\"\>", ",", "\<\"BOLO\"\>", ",", "\<\"BOOMS\"\>", 
+   ",", "\<\"BOP\"\>", ",", "\<\"BOSMKL\"\>", ",", "\<\"BOT\"\>", 
+   ",", "\<\"BOT\"\>", ",", "\<\"BMS\"\>", ",", "\<\"BOYF\"\>", 
+   ",", "\<\"BPLM\"\>", ",", "\<\"BRB\"\>", ",", "\<\"BR\"\>", 
+   ",", "\<\"BRBB\"\>", ",", "\<\"BRNC\"\>", ",", "\<\"BRD\"\>", 
+   ",", "\<\"BRH\"\>", ",", "\<\"BRT\"\>", ",", "\<\"BSF\"\>", 
+   ",", "\<\"BSOD\"\>", ",", "\<\"BSTS\"\>", ",", "\<\"BT\"\>", 
+   ",", "\<\"BT\"\>", ",", "\<\"BTA\"\>", ",", "\<\"BTDT\"\>", 
+   ",", "\<\"BTW\"\>", ",", "\<\"BTYCL\"\>", ",", "\<\"BUBU\"\>", 
+   ",", "\<\"BURN\"\>", ",", "\<\"Buff\"\>", ",", "\<\"BWL\"\>", 
+   ",", "\<\"BYOB\"\>", ",", "\<\"BYOC\"\>", ",", "\<\"BYOD\"\>", 
+   ",", "\<\"BYOH\"\>", ",", "\<\"BYOP\"\>", ",", "\<\"BYTM\"\>", 
+   ",", "\<\"C&G\"\>", ",", "\<\"C4N\"\>", ",", "\<\"CAD\"\>", 
+   ",", "\<\"CAD\"\>", ",", "\<\"Cakeday\"\>", ",", "\<\"CAM\"\>", 
+   ",", "\<\"CB\"\>", ",", "\<\"CB\"\>", ",", "\<\"CB\"\>", 
+   ",", "\<\"CD9\"\>", ",", "\<\"CFS\"\>", ",", "\<\"CFY\"\>", 
+   ",", "\<\"CHK\"\>", ",", "\<\"CIAO\"\>", ",", "\<\"CICO\"\>", 
+   ",", "\<\"CID\"\>", ",", "\<\"CID\"\>", ",", "\<\"CLAB\"\>", 
+   ",", "\<\"CLD\"\>", ",", "\<\"CLK\"\>", ",", "\<\"CM\"\>", 
+   ",", "\<\"CMAP\"\>", ",", "\<\"CMB\"\>", ",", "\<\"CMGR\"\>", 
+   ",", "\<\"CMIIW\"\>", ",", "\<\"CMON\"\>", ",", "\<\"CNP\"\>", 
+   ",", "\<\"COB\"\>", ",", "\<\"COH\"\>", ",", "\<\"COS\"\>", 
+   ",", "\<\"C/P\"\>", ",", "\<\"CP\"\>", ",", "\<\"CR8\"\>", 
+   ",", "\<\"Cray\"\>", ",", "\<\"CRE8\"\>", ",", "\<\"CRA CRA\"\>", 
+   ",", "\<\"CRAFT\"\>", ",", "\<\"CRB\"\>", ",", "\<\"CRBT\"\>", 
+   ",", "\<\"CRIT\"\>", ",", "\<\"CRZ\"\>", ",", "\<\"CRS\"\>", 
+   ",", "\<\"CSG\"\>", ",", "\<\"CSL\"\>", ",", "\<\"CSS\"\>", 
+   ",", "\<\"CT\"\>", ",", "\<\"CTC\"\>", ",", "\<\"CTHU\"\>", 
+   ",", "\<\"CTN\"\>", ",", "\<\"CTO\"\>", ",", "\<\"CU\"\>", 
+   ",", "\<\"CU\"\>", ",", "\<\"CU2\"\>", ",", "\<\"CUA\"\>", 
+   ",", "\<\"CUL\"\>", ",", "\<\"CULA\"\>", ",", "\<\"CUL8R\"\>", 
+   ",", "\<\"CUMID\"\>", ",", "\<\"CURLO\"\>", ",", "\<\"CWD\"\>", 
+   ",", "\<\"CWOT\"\>", ",", "\<\"CWYL\"\>", ",", "\<\"CX\"\>", 
+   ",", "\<\"CYA\"\>", ",", "\<\"CYAL8R\"\>", ",", "\<\"CYE\"\>", 
+   ",", "\<\"CYEP\"\>", ",", "\<\"CYO\"\>", ",", "\<\"D2\"\>", 
+   ",", "\<\"D46?\"\>", ",", "\<\"DA\"\>", ",", "\<\"DAE\"\>", 
+   ",", "\<\"DAFUQ\"\>", ",", "\<\"DAM\"\>", ",", "\<\"DAoC\"\>", 
+   ",", "\<\"DBAU\"\>", ",", "\<\"DBEYR\"\>", ",", "\<\"DC\"\>", 
+   ",", "\<\"DD\"\>", ",", "\<\"DD\"\>", ",", "\<\"DDG\"\>", 
+   ",", "\<\"DEEZ NUTZ\"\>", ",", "\<\"DEGT\"\>", ",", "\<\"DERP\"\>", 
+   ",", "\<\"DF\"\>", ",", "\<\"DFL\"\>", ",", "\<\"DGA\"\>", 
+   ",", "\<\"DGAF\"\>", ",", "\<\"DGT\"\>", ",", "\<\"DGTG\"\>", 
+   ",", "\<\"DGYF\"\>", ",", "\<\"DH\"\>", ",", "\<\"DHU\"\>", 
+   ",", "\<\"DIIK\"\>", ",", "\<\"DIKU\"\>", ",", "\<\"DILLIGAF\"\>", 
+   ",", "\<\"DILLIGAS\"\>", ",", "\<\"DIS\"\>", ",", "\<\"DITYID\"\>", 
+   ",", "\<\"DIY\"\>", ",", "\<\"DKDC\"\>", ",", "\<\"DKP\"\>", 
+   ",", "\<\"D/L\"\>", ",", "\<\"DL\"\>", ",", "\<\"DL\"\>", 
+   ",", "\<\"DL\"\>", ",", "\<\"DLBBB\"\>", ",", "\<\"DLTBBB\"\>", 
+   ",", "\<\"DM\"\>", ",", "\<\"DM\"\>", ",", "\<\"DM\"\>", ",", "\<\"DM\"\>",
+    ",", "\<\"DMNO\"\>", ",", "\<\"DMY\"\>", ",", "\<\"DN\"\>", 
+   ",", "\<\"DNC\"\>", ",", "\<\"DNR\"\>", ",", "\<\"DNT\"\>", 
+   ",", "\<\"d00d\"\>", ",", "\<\"DOE\"\>", ",", "\<\"DORBS\"\>", 
+   ",", "\<\"DOT\"\>", ",", "\<\"Downvote\"\>", ",", "\<\"DPS\"\>", 
+   ",", "\<\"DQMOT\"\>", ",", "\<\"DR\"\>", ",", "\<\"DS\"\>", 
+   ",", "\<\"DTR\"\>", ",", "\<\"DTRT\"\>", ",", "\<\"DTS\"\>", 
+   ",", "\<\"DTTD\"\>", ",", "\<\"DUPE\"\>", ",", "\<\"DUR\"\>", 
+   ",", "\<\"DV8\"\>", ",", "\<\"DW\"\>", ",", "\<\"DWF\"\>", 
+   ",", "\<\"DWM\"\>", ",", "\<\"DXNRY\"\>", ",", "\<\"DYNWUTB\"\>", 
+   ",", "\<\"DYFI\"\>", ",", "\<\"DYFM\"\>", ",", "\<\"DYJHIW\"\>", 
+   ",", "\<\"DYOR\"\>", ",", "\<\"E\"\>", ",", "\<\"E\"\>", ",", "\<\"E1\"\>",
+    ",", "\<\"E123\"\>", ",", "\<\"E2EG\"\>", ",", "\<\"EAK\"\>", 
+   ",", "\<\"EBKAC\"\>", ",", "\<\"ED\"\>", ",", "\<\"EF4T\"\>", 
+   ",", "\<\"EG\"\>", ",", "\<\"EI\"\>", ",", "\<\"EIP\"\>", 
+   ",", "\<\"ELI5\"\>", ",", "\<\"EM\"\>", ",", "\<\"EMA\"\>", 
+   ",", "\<\"EMBAR\"\>", ",", "\<\"EMFBI\"\>", ",", "\<\"EMFBI\"\>", 
+   ",", "\<\"EMSG\"\>", ",", "\<\"ENUF\"\>", ",", "\<\"EOD\"\>", 
+   ",", "\<\"EOD\"\>", ",", "\<\"EOL\"\>", ",", "\<\"EOL\"\>", 
+   ",", "\<\"EOM\"\>", ",", "\<\"EOS\"\>", ",", "\<\"EOT\"\>", 
+   ",", "\<\"EQ\"\>", ",", "\<\"ERP\"\>", ",", "\<\"ERS2\"\>", 
+   ",", "\<\"ES\"\>", ",", "\<\"ESAD\"\>", ",", "\<\"ETA\"\>", 
+   ",", "\<\"ETA\"\>", ",", "\<\"EVA\"\>", ",", "\<\"EVO\"\>", 
+   ",", "\<\"EWG\"\>", ",", "\<\"EWI\"\>", ",", "\<\"EXTRA\"\>", 
+   ",", "\<\"EYC\"\>", ",", "\<\"EZ\"\>", ",", "\<\"EZY\"\>", 
+   ",", "\<\"F\"\>", ",", "\<\"F2F\"\>", ",", "\<\"F2P\"\>", 
+   ",", "\<\"F4F\"\>", ",", "\<\"FAAK\"\>", ",", "\<\"FAB\"\>", 
+   ",", "\<\"Facepalm\"\>", ",", "\<\"FAF\"\>", ",", "\<\"FAM\"\>", 
+   ",", "\<\"FAQ\"\>", ",", "\<\"FAY\"\>", ",", "\<\"FB\"\>", 
+   ",", "\<\"FBB\"\>", ",", "\<\"FBC\"\>", ",", "\<\"FBF\"\>", 
+   ",", "\<\"FBF\"\>", ",", "\<\"FBF\"\>", ",", "\<\"FBFR\"\>", 
+   ",", "\<\"FBM\"\>", ",", "\<\"FBO\"\>", ",", "\<\"FBOW\"\>", 
+   ",", "\<\"FC\"\>", ",", "\<\"FC\"\>", 
+   ",", "\<\"FC\[CloseCurlyQuote]INGO\"\>", ",", "\<\"FCOL\"\>", 
+   ",", "\<\"Feelsbadman\"\>", ",", "\<\"Feelsbatman\"\>", 
+   ",", "\<\"Feelsgoodman\"\>", ",", "\<\"FEITCTAJ\"\>", ",", "\<\"FF\"\>", 
+   ",", "\<\"FFA\"\>", ",", "\<\"FFS\"\>", ",", "\<\"FICCL\"\>", 
+   ",", "\<\"FIF\"\>", ",", "\<\"FIIK\"\>", ",", "\<\"FIIOOH\"\>", 
+   ",", "\<\"FIL\"\>", ",", "\<\"FIMH\"\>", ",", "\<\"Finna\"\>", 
+   ",", "\<\"Finsta\"\>", ",", "\<\"FISH\"\>", ",", "\<\"FITB\"\>", 
+   ",", "\<\"FML\"\>", ",", "\<\"FOMC\"\>", ",", "\<\"FOMO\"\>", 
+   ",", "\<\"FOAD\"\>", ",", "\<\"FOAF\"\>", ",", "\<\"FOMCL\"\>", 
+   ",", "\<\"FRT\"\>", ",", "\<\"FTBOMH\"\>", ",", "\<\"FTFY\"\>", 
+   ",", "\<\"FTL\"\>", ",", "\<\"FTW\"\>", ",", "\<\"FU\"\>", 
+   ",", "\<\"FUBAR\"\>", ",", "\<\"FUBB\"\>", ",", "\<\"FUD\"\>", 
+   ",", "\<\"FUTAB\"\>", ",", "\<\"FW\"\>", ",", "\<\"FWB\"\>", 
+   ",", "\<\"FWIW\"\>", ",", "\<\"FWM\"\>", ",", "\<\"FWP\"\>", 
+   ",", "\<\"FYE\"\>", ",", "\<\"FYEO\"\>", ",", "\<\"FYA\"\>", 
+   ",", "\<\"FYI\"\>", ",", "\<\"G\"\>", ",", "\<\"G\"\>", ",", "\<\"G+\"\>", 
+   ",", "\<\"G/F\"\>", ",", "\<\"G2CU\"\>", ",", "\<\"G2G\"\>", 
+   ",", "\<\"G2GICYAL8ER\"\>", ",", "\<\"G2R\"\>", ",", "\<\"G2TU\"\>", 
+   ",", "\<\"G4C\"\>", ",", "\<\"G9\"\>", ",", "\<\"GA\"\>", 
+   ",", "\<\"GAC\"\>", ",", "\<\"GAFC\"\>", ",", "\<\"GAL\"\>", 
+   ",", "\<\"GANK\"\>", ",", "\<\"GAS\"\>", ",", "\<\"GAS\"\>", 
+   ",", "\<\"GB\"\>", ",", "\<\"GBTW\"\>", ",", "\<\"GBU\"\>", 
+   ",", "\<\"GD\"\>", ",", "\<\"GDR\"\>", ",", "\<\"GD/R\"\>", 
+   ",", "\<\"GFI\"\>", ",", "\<\"GF\"\>", ",", "\<\"GFN\"\>", 
+   ",", "\<\"GG\"\>", ",", "\<\"GG\"\>", ",", "\<\"GG\"\>", 
+   ",", "\<\"GGA\"\>", ",", "\<\"GGE1\"\>", ",", "\<\"GGU2\"\>", 
+   ",", "\<\"GGMSOT\"\>", ",", "\<\"GGOH\"\>", ",", "\<\"GGP\"\>", 
+   ",", "\<\"GH\"\>", ",", "\<\"GIAR\"\>", ",", "\<\"GIC\"\>", 
+   ",", "\<\"GIGO\"\>", ",", "\<\"GIRL\"\>", ",", "\<\"GJ\"\>", 
+   ",", "\<\"GL\"\>", ",", "\<\"GL2U\"\>", ",", "\<\"GLA\"\>", 
+   ",", "\<\"GL/HF\"\>", ",", "\<\"GLE\"\>", ",", "\<\"GLE1\"\>", 
+   ",", "\<\"GLNG\"\>", ",", "\<\"GMBA\"\>", ",", "\<\"GMTA\"\>", 
+   ",", "\<\"GMV\"\>", ",", "\<\"GN\"\>", ",", "\<\"GNA\"\>", 
+   ",", "\<\"GNE1\"\>", ",", "\<\"GNIGHT\"\>", ",", "\<\"GNITE\"\>", 
+   ",", "\<\"GNSD\"\>", ",", "\<\"GOAT\"\>", ",", "\<\"GOI\"\>", 
+   ",", "\<\"GOL\"\>", ",", "\<\"GOMB\"\>", ",", "\<\"GPOY\"\>", 
+   ",", "\<\"GR8\"\>", ",", "\<\"GRATZ\"\>", ",", "\<\"GRL\"\>", 
+   ",", "\<\"GRWG\"\>", ",", "\<\"GR&D\"\>", ",", "\<\"GS\"\>", 
+   ",", "\<\"GS\"\>", ",", "\<\"GT\"\>", ",", "\<\"GTFO\"\>", 
+   ",", "\<\"GTFOH\"\>", ",", "\<\"GTG\"\>", ",", "\<\"GTM\"\>", 
+   ",", "\<\"GTRM\"\>", ",", "\<\"GTSY\"\>", ",", "\<\"GUCCI\"\>", 
+   ",", "\<\"GUD\"\>", ",", "\<\"GWHTLC\"\>", ",", "\<\"H\"\>", 
+   ",", "\<\"H8\"\>", ",", "\<\"H8TTU\"\>", ",", "\<\"HAG1\"\>", 
+   ",", "\<\"HAK\"\>", ",", "\<\"HALP\"\>", ",", "\<\"HAU\"\>", 
+   ",", "\<\"H&K\"\>", ",", "\<\"H2CUS\"\>", ",", "\<\"HAGN\"\>", 
+   ",", "\<\"HAGO\"\>", ",", "\<\"HAND\"\>", ",", "\<\"HAWT\"\>", 
+   ",", "\<\"HAWT\"\>", ",", "\<\"HB\"\>", ",", "\<\"HB\"\>", 
+   ",", "\<\"HBD\"\>", ",", "\<\"H-BDAY\"\>", ",", "\<\"HBU\"\>", 
+   ",", "\<\"HF\"\>", ",", "\<\"HFAC\"\>", ",", "\<\"H-FDAY\"\>", 
+   ",", "\<\"HHIS\"\>", ",", "\<\"HIFW\"\>", ",", "\<\"HL\"\>", 
+   ",", "\<\"HLA\"\>", ",", "\<\"H-MDAY\"\>", ",", "\<\"HMU\"\>", 
+   ",", "\<\"HNL\"\>", ",", "\<\"HOAS\"\>", ",", "\<\"HP\"\>", 
+   ",", "\<\"HRU\"\>", ",", "\<\"HTH\"\>", ",", "\<\"HUB\"\>", 
+   ",", "\<\"HUYA\"\>", ",", "\<\"HV\"\>", ",", "\<\"HVH\"\>", 
+   ",", "\<\"HW\"\>", ",", "\<\"HYFR\"\>", ",", "\<\"I2\"\>", 
+   ",", "\<\"IA8\"\>", ",", "\<\"IAAA\"\>", ",", "\<\"IAAD\"\>", 
+   ",", "\<\"IAAL\"\>", ",", "\<\"IAC\"\>", ",", "\<\"IAE\"\>", 
+   ",", "\<\"IANAC\"\>", ",", "\<\"IANAL\"\>", ",", "\<\"IAO\"\>", 
+   ",", "\<\"IB\"\>", ",", "\<\"IB\"\>", ",", "\<\"IC\"\>", 
+   ",", "\<\"ICAM\"\>", ",", "\<\"ICBW\"\>", ",", "\<\"ICEDI\"\>", 
+   ",", "\<\"ICFILWU\"\>", ",", "\<\"ICYMI\"\>", ",", "\<\"IDBI\"\>", 
+   ",", "\<\"IDC\"\>", ",", "\<\"IDGAF\"\>", ",", "\<\"IDK\"\>", 
+   ",", "\<\"IDTS\"\>", ",", "\<\"IDUNNO\"\>", ",", "\<\"IFYP\"\>", 
+   ",", "\<\"IG\"\>", ",", "\<\"IG2R\"\>", ",", "\<\"IGHT\"\>", 
+   ",", "\<\"IGN\"\>", ",", "\<\"IGP\"\>", ",", "\<\"IHNI\"\>", 
+   ",", "\<\"IIRC\"\>", ",", "\<\"IIIO\"\>", ",", "\<\"IK\"\>", 
+   ",", "\<\"IKR\"\>", ",", "\<\"ILBL8\"\>", ",", "\<\"ILU\"\>", 
+   ",", "\<\"ILUM\"\>", ",", "\<\"ILYSM\"\>", ",", "\<\"ILY\"\>", 
+   ",", "\<\"IM\"\>", ",", "\<\"IMAO\"\>", ",", "\<\"IMHO\"\>", 
+   ",", "\<\"ImL\"\>", ",", "\<\"IMNSHO\"\>", ",", "\<\"IMO\"\>", 
+   ",", "\<\"IMS\"\>", ",", "\<\"IMSB\"\>", ",", "\<\"IMTM\"\>", 
+   ",", "\<\"IMU\"\>", ",", "\<\"INAL\"\>", ",", "\<\"INC\"\>", 
+   ",", "\<\"Inspoo\"\>", ",", "\<\"INV\"\>", ",", "\<\"IOMH\"\>", 
+   ",", "\<\"IOW\"\>", ",", "\<\"IRL\"\>", ",", "\<\"IRMC\"\>", 
+   ",", "\<\"ISLY\"\>", ",", "\<\"ISO\"\>", ",", "\<\"ITAM\"\>", 
+   ",", "\<\"ITT\"\>", ",", "\<\"ITYK\"\>", ",", "\<\"IUSS\"\>", 
+   ",", "\<\"IWALU\"\>", ",", "\<\"IWAWO\"\>", ",", "\<\"IWIAM\"\>", 
+   ",", "\<\"IWSN\"\>", ",", "\<\"IYKWIM\"\>", ",", "\<\"IYO\"\>", 
+   ",", "\<\"IYQ\"\>", ",", "\<\"IYSS\"\>", ",", "\<\"j00\"\>", 
+   ",", "\<\"j00r\"\>", ",", "\<\"JAC\"\>", ",", "\<\"JAM\"\>", 
+   ",", "\<\"JAS\"\>", ",", "\<\"JC (J/C)\"\>", ",", "\<\"JDI\"\>", 
+   ",", "\<\"JELLY\"\>", ",", "\<\"JFF\"\>", ",", "\<\"JFGI\"\>", 
+   ",", "\<\"JIC\"\>", ",", "\<\"JJ (J/J)\"\>", ",", "\<\"JJA\"\>", 
+   ",", "\<\"JK (J/K)\"\>", ",", "\<\"JLMK\"\>", ",", "\<\"JMO\"\>", 
+   ",", "\<\"JP\"\>", ",", "\<\"JP\"\>", ",", "\<\"JT (J/T)\"\>", 
+   ",", "\<\"JTLYK\"\>", ",", "\<\"JV\"\>", ",", "\<\"JW\"\>", 
+   ",", "\<\"K\"\>", ",", "\<\"KK\"\>", ",", "\<\"KK\"\>", ",", "\<\"K8T\"\>",
+    ",", "\<\"k/b\"\>", ",", "\<\"KB\"\>", ",", "\<\"KB\"\>", 
+   ",", "\<\"KDFU\"\>", ",", "\<\"KEWL\"\>", ",", "\<\"KEYA\"\>", 
+   ",", "\<\"KEYME\"\>", ",", "\<\"KFY\"\>", ",", "\<\"KIA\"\>", 
+   ",", "\<\"KIR\"\>", ",", "\<\"KISS\"\>", ",", "\<\"KIT\"\>", 
+   ",", "\<\"KMA\"\>", ",", "\<\"KMK\"\>", ",", "\<\"KMS\"\>", 
+   ",", "\<\"KMT\"\>", ",", "\<\"KOC\"\>", ",", "\<\"KOL\"\>", 
+   ",", "\<\"Koreaboo\"\>", ",", "\<\"KOS\"\>", ",", "\<\"KOS\"\>", 
+   ",", "\<\"KOW\"\>", ",", "\<\"KOTC\"\>", ",", "\<\"KOTD\"\>", 
+   ",", "\<\"KOTL\"\>", ",", "\<\"KNIM\"\>", ",", "\<\"KNOW\"\>", 
+   ",", "\<\"KPC\"\>", ",", "\<\"KS\"\>", ",", "\<\"KSC\"\>", 
+   ",", "\<\"KT\"\>", ",", "\<\"KUTGW\"\>", ",", "\<\"KYS\"\>", 
+   ",", "\<\"L2G\"\>", ",", "\<\"L2G\"\>", ",", "\<\"L2K\"\>", 
+   ",", "\<\"L2P\"\>", ",", "\<\"l33t\"\>", ",", "\<\"L4L\"\>", 
+   ",", "\<\"L8R\"\>", ",", "\<\"L8RG8R\"\>", ",", "\<\"LAB\"\>", 
+   ",", "\<\"LBAY\"\>", ",", "\<\"LBS\"\>", ",", "\<\"LBVS\"\>", 
+   ",", "\<\"LD\"\>", ",", "\<\"LD\"\>", ",", "\<\"LDO\"\>", 
+   ",", "\<\"LEMENO\"\>", ",", "\<\"LERK\"\>", ",", "\<\"LFD\"\>", 
+   ",", "\<\"LFG\"\>", ",", "\<\"LFG\"\>", ",", "\<\"LFM\"\>", 
+   ",", "\<\"LGH\"\>", ",", "\<\"LH6\"\>", ",", "\<\"LHSX\"\>", 
+   ",", "\<\"LHM\"\>", ",", "\<\"LHO\"\>", ",", "\<\"LI\"\>", 
+   ",", "\<\"LIC\"\>", ",", "\<\"LIK\"\>", ",", "\<\"LIMT\"\>", 
+   ",", "\<\"LIT\"\>", ",", "\<\"LIT\"\>", ",", "\<\"LLGB\"\>", 
+   ",", "\<\"LLS\"\>", ",", "\<\"LMAO\"\>", ",", "\<\"LMBO\"\>", 
+   ",", "\<\"LMFAO\"\>", ",", "\<\"LMIRL\"\>", ",", "\<\"LMK\"\>", 
+   ",", "\<\"LMMFAO\"\>", ",", "\<\"LMNK\"\>", ",", "\<\"LMS\"\>", 
+   ",", "\<\"LNT\"\>", ",", "\<\"LOA\"\>", ",", "\<\"LOL\"\>", 
+   ",", "\<\"LOL\"\>", ",", "\<\"LOL\"\>", ",", "\<\"LOLH\"\>", 
+   ",", "\<\"LOLO\"\>", ",", "\<\"LOLWTF\"\>", ",", "\<\"LOTI\"\>", 
+   ",", "\<\"LOTR\"\>", ",", "\<\"LQTM\"\>", ",", "\<\"LSHMBH\"\>", 
+   ",", "\<\"LSV\"\>", ",", "\<\"LTD\"\>", ",", "\<\"LTLWDLS\"\>", 
+   ",", "\<\"LTNS\"\>", ",", "\<\"LTOD\"\>", ",", "\<\"LTS\"\>", 
+   ",", "\<\"LULT\"\>", ",", "\<\"LULZ\"\>", ",", "\<\"LVM\"\>", 
+   ",", "\<\"LWOS\"\>", ",", "\<\"LY\"\>", ",", "\<\"LYLAS\"\>", 
+   ",", "\<\"LYLC\"\>", ",", "\<\"LYSM\"\>", ",", "\<\"M$\"\>", 
+   ",", "\<\"M8\"\>", ",", "\<\"MB\"\>", ",", "\<\"MBS\"\>", 
+   ",", "\<\"MC\"\>", ",", "\<\"MDIAC\"\>", ",", "\<\"MEGO\"\>", 
+   ",", "\<\"MEH\"\>", ",", "\<\"MEH\"\>", ",", "\<\"MEHH\"\>", 
+   ",", "\<\"MEZ\"\>", ",", "\<\"MFI\"\>", ",", "\<\"MFW\"\>", 
+   ",", "\<\"MGB\"\>", ",", "\<\"MGMT\"\>", ",", "\<\"MHOTY\"\>", 
+   ",", "\<\"MIRL\"\>", ",", "\<\"MIRL\"\>", ",", "\<\"MISS.3\"\>", 
+   ",", "\<\"MKAY\"\>", ",", "\<\"MLM\"\>", ",", "\<\"MM\"\>", 
+   ",", "\<\"MMK\"\>", ",", "\<\"MNC\"\>", ",", "\<\"MNSG\"\>", 
+   ",", "\<\"MOD\"\>", ",", "\<\"MOD\"\>", ",", "\<\"MORF\"\>", 
+   ",", "\<\"MOMBOY\"\>", ",", "\<\"MOO\"\>", ",", "\<\"MOOS\"\>", 
+   ",", "\<\"MOS\"\>", ",", "\<\"MOSS\"\>", ",", "\<\"MP\"\>", 
+   ",", "\<\"MR.3\"\>", ",", "\<\"MRT\"\>", ",", "\<\"MRW\"\>", 
+   ",", "\<\"MSG\"\>", ",", "\<\"MTF\"\>", ",", "\<\"MTFBWU\"\>", 
+   ",", "\<\"MU\"\>", ",", "\<\"MUAH\"\>", ",", "\<\"MUSM\"\>", 
+   ",", "\<\"MWAH\"\>", ",", "\<\"MYO\"\>", ",", "\<\"MYOB\"\>", 
+   ",", "\<\"n00b\"\>", ",", "\<\"N1\"\>", ",", "\<\"N2M\"\>", 
+   ",", "\<\"NADT\"\>", ",", "\<\"NALOPKT\"\>", ",", "\<\"NANA\"\>", 
+   ",", "\<\"NBD\"\>", ",", "\<\"NBFAB\"\>", ",", "\<\"NC\"\>", 
+   ",", "\<\"ND\"\>", ",", "\<\"NE\"\>", ",", "\<\"NE1\"\>", 
+   ",", "\<\"NERF\"\>", ",", "\<\"NFM\"\>", ",", "\<\"NFM\"\>", 
+   ",", "\<\"NGL\"\>", ",", "\<\"NFS\"\>", ",", "\<\"NFS\"\>", 
+   ",", "\<\"NFW\"\>", ",", "\<\"NFW\"\>", ",", "\<\"NFWS\"\>", 
+   ",", "\<\"NH\"\>", ",", "\<\"NIFOC\"\>", ",", "\<\"NIGI\"\>", 
+   ",", "\<\"NIMBY\"\>", ",", "\<\"NIROK\"\>", ",", "\<\"NLT\"\>", 
+   ",", "\<\"NM\"\>", ",", "\<\"NM\"\>", ",", "\<\"NM\"\>", 
+   ",", "\<\"NMH\"\>", ",", "\<\"NMJC\"\>", ",", "\<\"NMU\"\>", 
+   ",", "\<\"NO1\"\>", ",", "\<\"NOOB\"\>", ",", "\<\"NOWL\"\>", 
+   ",", "\<\"NOYB\"\>", ",", "\<\"NP\"\>", ",", "\<\"NPC\"\>", 
+   ",", "\<\"NQT\"\>", ",", "\<\"NR\"\>", ",", "\<\"NRN\"\>", 
+   ",", "\<\"NS\"\>", ",", "\<\"NS\"\>", ",", "\<\"NSA\"\>", 
+   ",", "\<\"NSFL\"\>", ",", "\<\"NSFW\"\>", ",", "\<\"NSISR\"\>", 
+   ",", "\<\"NT\"\>", ",", "\<\"NTHING\"\>", ",", "\<\"NTS\"\>", 
+   ",", "\<\"NVM\"\>", ",", "\<\"NVR\"\>", ",", "\<\"NW\"\>", 
+   ",", "\<\"NWO\"\>", ",", "\<\"O4U\"\>", ",", "\<\"O\"\>", ",", "\<\"O\"\>",
+    ",", "\<\"O\"\>", ",", "\<\"OA\"\>", ",", "\<\"OATUS\"\>", 
+   ",", "\<\"OB\"\>", ",", "\<\"OB\"\>", ",", "\<\"OBV\"\>", 
+   ",", "\<\"OFC\"\>", ",", "\<\"OG\"\>", ",", "\<\"OGIM\"\>", 
+   ",", "\<\"OH\"\>", ",", "\<\"OHHEMMGEE\"\>", ",", "\<\"OI\"\>", 
+   ",", "\<\"OIB\"\>", ",", "\<\"OIC\"\>", ",", "\<\"OJ\"\>", 
+   ",", "\<\"OL\"\>", ",", "\<\"OLL\"\>", ",", "\<\"OM\"\>", 
+   ",", "\<\"OM\"\>", ",", "\<\"OMAA\"\>", ",", "\<\"OMDB\"\>", 
+   ",", "\<\"OMFG\"\>", ",", "\<\"OMG\"\>", ",", "\<\"OMG\"\>", 
+   ",", "\<\"OMGYG2BK\"\>", ",", "\<\"OMGYS\"\>", ",", "\<\"OMS\"\>", 
+   ",", "\<\"OMW\"\>", ",", "\<\"ONL\"\>", ",", "\<\"OO\"\>", 
+   ",", "\<\"OOC\"\>", ",", "\<\"OOH\"\>", ",", "\<\"OOMF\"\>", 
+   ",", "\<\"OOTD\"\>", ",", "\<\"OOTD\"\>", ",", "\<\"OOTO\"\>", 
+   ",", "\<\"OP\"\>", ",", "\<\"ORLY\"\>", ",", "\<\"OS\"\>", 
+   ",", "\<\"OT\"\>", ",", "\<\"OTB\"\>", ",", "\<\"OTFL\"\>", 
+   ",", "\<\"OTL\"\>", ",", "\<\"OTOH\"\>", ",", "\<\"OTP\"\>", 
+   ",", "\<\"OTP\"\>", ",", "\<\"OTT\"\>", ",", "\<\"OTTOMH\"\>", 
+   ",", "\<\"OTW\"\>", ",", "\<\"OVA\"\>", ",", "\<\"OYO\"\>", 
+   ",", "\<\"P\"\>", ",", "\<\"P2P\"\>", ",", "\<\"P2P\"\>", 
+   ",", "\<\"P2P\"\>", ",", "\<\"P911\"\>", ",", "\<\"PAP\"\>", 
+   ",", "\<\"PAT\"\>", ",", "\<\"PAW\"\>", ",", "\<\"PBOOK\"\>", 
+   ",", "\<\"PC\"\>", ",", "\<\"PCM\"\>", ",", "\<\"PDA\"\>", 
+   ",", "\<\"PDH\"\>", ",", "\<\"PDS\"\>", ",", "\<\"PDQ\"\>", 
+   ",", "\<\"PEEPS\"\>", ",", "\<\"PFT\"\>", ",", "\<\"PIC\"\>", 
+   ",", "\<\"PIP\"\>", ",", "\<\"PIR\"\>", ",", "\<\"PISS\"\>", 
+   ",", "\<\"PITA\"\>", ",", "\<\"PKMN\"\>", ",", "\<\"PL8\"\>", 
+   ",", "\<\"PLD\"\>", ",", "\<\"PLMK\"\>", ",", "\<\"PLS\"\>", 
+   ",", "\<\"PLU\"\>", ",", "\<\"PLZ\"\>", ",", "\<\"PLZTLME\"\>", 
+   ",", "\<\"PM\"\>", ",", "\<\"PMFI\"\>", ",", "\<\"PMFJI\"\>", 
+   ",", "\<\"PMSL\"\>", ",", "\<\"POAHF\"\>", ",", "\<\"POIDH\"\>", 
+   ",", "\<\"POS\"\>", ",", "\<\"POT\"\>", ",", "\<\"POTD\"\>", 
+   ",", "\<\"POV\"\>", ",", "\<\"POV\"\>", ",", "\<\"PPL\"\>", 
+   ",", "\<\"PPU\"\>", ",", "\<\"PRESH\"\>", ",", "\<\"PROBS\"\>", 
+   ",", "\<\"PROLLY\"\>", ",", "\<\"PROGGY\"\>", ",", "\<\"PRON\"\>", 
+   ",", "\<\"PRT\"\>", ",", "\<\"PRT\"\>", ",", "\<\"PRW\"\>", 
+   ",", "\<\"PSA\"\>", ",", "\<\"PSOS\"\>", ",", "\<\"PSP\"\>", 
+   ",", "\<\"PST\"\>", ",", "\<\"PTFO\"\>", ",", "\<\"PTIYPASI\"\>", 
+   ",", "\<\"PTL\"\>", ",", "\<\"PTMM\"\>", ",", "\<\"PTO\"\>", 
+   ",", "\<\"PTO\"\>", ",", "\<\"PTO\"\>", ",", "\<\"PUG\"\>", 
+   ",", "\<\"PVE\"\>", ",", "\<\"PVP\"\>", ",", "\<\"PWN\"\>", 
+   ",", "\<\"PXT\"\>", ",", "\<\"PU\"\>", ",", "\<\"PUKS\"\>", 
+   ",", "\<\"PYT\"\>", ",", "\<\"PZ\"\>", ",", "\<\"PZA\"\>", 
+   ",", "\<\"Q\"\>", ",", "\<\"Q4U\"\>", ",", "\<\"QC\"\>", 
+   ",", "\<\"QFE\"\>", ",", "\<\"QFI\"\>", ",", "\<\"QFI\"\>", 
+   ",", "\<\"QFT\"\>", ",", "\<\"QIK\"\>", ",", "\<\"QL\"\>", 
+   ",", "\<\"QOTD\"\>", ",", "\<\"Q_Q\"\>", ",", "\<\"QQ\"\>", 
+   ",", "\<\"QSL\"\>", ",", "\<\"QSO\"\>", ",", "\<\"QT\"\>", 
+   ",", "\<\"QTPI\"\>", ",", "\<\"R\"\>", ",", "\<\"R8\"\>", 
+   ",", "\<\"RBAY\"\>", ",", "\<\"RFN\"\>", ",", "\<\"RGR\"\>", 
+   ",", "\<\"RHIP\"\>", ",", "\<\"RIP\"\>", ",", "\<\"RL\"\>", 
+   ",", "\<\"RLY\"\>", ",", "\<\"RME\"\>", ",", "\<\"RMLB\"\>", 
+   ",", "\<\"RMMM\"\>", ",", "\<\"ROFL\"\>", ",", "\<\"ROFLCOPTER\"\>", 
+   ",", "\<\"ROFLMAO\"\>", ",", "\<\"ROTFL\"\>", ",", "\<\"ROTFLUTS\"\>", 
+   ",", "\<\"RS\"\>", ",", "\<\"RSN\"\>", ",", "\<\"RT\"\>", 
+   ",", "\<\"RT\"\>", ",", "\<\"RTBS\"\>", ",", "\<\"RTFM\"\>", 
+   ",", "\<\"RTFQ\"\>", ",", "\<\"RTHX\"\>", ",", "\<\"RTMS\"\>", 
+   ",", "\<\"RTNTN\"\>", ",", "\<\"RTRCTV\"\>", ",", "\<\"RTRMT\"\>", 
+   ",", "\<\"RTSM\"\>", ",", "\<\"RTWFQ\"\>", ",", "\<\"RU\"\>", 
+   ",", "\<\"RUMOF\"\>", ",", "\<\"RUT\"\>", ",", "\<\"RUOK\"\>", 
+   ",", "\<\"RX\"\>", ",", "\<\"RW\"\>", ",", "\<\"RX\"\>", 
+   ",", "\<\"RYB\"\>", ",", "\<\"RYO\"\>", ",", "\<\"RYS\"\>", 
+   ",", "\<\"RYS\"\>", ",", "\<\"S2R\"\>", ",", "\<\"S2S\"\>", 
+   ",", "\<\"S4L\"\>", ",", "\<\"SAL\"\>", ",", "\<\"SAT\"\>", 
+   ",", "\<\"SAVAGE\"\>", ",", "\<\"SB\"\>", ",", "\<\"SB\"\>", 
+   ",", "\<\"SB\"\>", ",", "\<\"SBIA\"\>", ",", "\<\"SBT\"\>", 
+   ",", "\<\"SC\"\>", ",", "\<\"SD\"\>", ",", "\<\"SDMB\"\>", 
+   ",", "\<\"SENPAI\"\>", ",", "\<\"SEO\"\>", ",", "\<\"SETE\"\>", 
+   ",", "\<\"SELFIE\"\>", ",", "\<\"SFAIK\"\>", ",", "\<\"SH\"\>", 
+   ",", "\<\"SH^\"\>", ",", "\<\"SHID\"\>", ",", "\<\"SHIP\"\>", 
+   ",", "\<\"SICNR\"\>", ",", "\<\"SIG2R\"\>", ",", "\<\"SIHTH\"\>", 
+   ",", "\<\"SIMYC\"\>", ",", "\<\"SIR\"\>", ",", "\<\"SIS\"\>", 
+   ",", "\<\"SIS\"\>", ",", "\<\"SIT\"\>", ",", "\<\"SITD\"\>", 
+   ",", "\<\"SJW\"\>", ",", "\<\"SK8\"\>", ",", "\<\"SK8NG\"\>", 
+   ",", "\<\"SK8R\"\>", ",", "\<\"SK8RBOI\"\>", ",", "\<\"SLAP\"\>", 
+   ",", "\<\"Slay\"\>", ",", "\<\"SM\"\>", ",", "\<\"SMAZED\"\>", 
+   ",", "\<\"SMEXI\"\>", ",", "\<\"SMH\"\>", ",", "\<\"SMHID\"\>", 
+   ",", "\<\"SNAFU\"\>", ",", "\<\"SNERT\"\>", ",", "\<\"SNR\"\>", 
+   ",", "\<\"SO\"\>", ",", "\<\"SOAB\"\>", 
+   ",", "\<\"S\[CloseCurlyQuote]OK\"\>", ",", "\<\"SOL\"\>", 
+   ",", "\<\"SOMY\"\>", ",", "\<\"SorG\"\>", ",", "\<\"SOS\"\>", 
+   ",", "\<\"SOS\"\>", ",", "\<\"SOT\"\>", ",", "\<\"SOTMG\"\>", 
+   ",", "\<\"SOWM\"\>", ",", "\<\"SPK\"\>", ",", "\<\"SRSLY\"\>", 
+   ",", "\<\"SPST\"\>", ",", "\<\"SPTO\"\>", ",", "\<\"SQ\"\>", 
+   ",", "\<\"SRY\"\>", ",", "\<\"SS\"\>", ",", "\<\"SSDD\"\>", 
+   ",", "\<\"SSIF\"\>", ",", "\<\"SSINF\"\>", ",", "\<\"ST&D\"\>", 
+   ",", "\<\"Stan\"\>", ",", "\<\"STFU\"\>", ",", "\<\"STR8\"\>", 
+   ",", "\<\"STW\"\>", ",", "\<\"SU\"\>", ",", "\<\"SUITM\"\>", 
+   ",", "\<\"SUL\"\>", ",", "\<\"SUP\"\>", ",", "\<\"SUTH\"\>", 
+   ",", "\<\"SUX\"\>", ",", "\<\"SUYF\"\>", ",", "\<\"SWAG\"\>", 
+   ",", "\<\"SWAG\"\>", ",", "\<\"SWAK\"\>", ",", "\<\"SWALK\"\>", 
+   ",", "\<\"SWAT\"\>", ",", "\<\"SWL\"\>", ",", "\<\"SWMBO\"\>", 
+   ",", "\<\"SYL\"\>", ",", "\<\"SYS\"\>", ",", "\<\"SYY\"\>", 
+   ",", "\<\"T+\"\>", ",", "\<\"T4BU\"\>", ",", "\<\"T:)T\"\>", 
+   ",", "\<\"TA\"\>", ",", "\<\"TAFN\"\>", ",", "\<\"TAM\"\>", 
+   ",", "\<\"TANK\"\>", ",", "\<\"TANKED\"\>", ",", "\<\"TANKING\"\>", 
+   ",", "\<\"TARFU\"\>", ",", "\<\"TAU\"\>", ",", "\<\"TAUMUALU\"\>", 
+   ",", "\<\"TBAG\"\>", ",", "\<\"TBBH\"\>", ",", "\<\"TBC\"\>", 
+   ",", "\<\"TBD\"\>", ",", "\<\"TBH\"\>", ",", "\<\"TBL\"\>", 
+   ",", "\<\"TBT\"\>", ",", "\<\"TC\"\>", ",", "\<\"TCB\"\>", 
+   ",", "\<\"TCOY\"\>", ",", "\<\"TD\"\>", ",", "\<\"TD2M\"\>", 
+   ",", "\<\"TDTM\"\>", ",", "\<\"TEA\"\>", ",", "\<\"TFF\"\>", 
+   ",", "\<\"TFS\"\>", ",", "\<\"TFTF\"\>", ",", "\<\"TFTI\"\>", 
+   ",", "\<\"TFTT\"\>", ",", "\<\"TG\"\>", ",", "\<\"TGIF\"\>", 
+   ",", "\<\"THNQ\"\>", ",", "\<\"THNX\"\>", ",", "\<\"THOT\"\>", 
+   ",", "\<\"THT\"\>", ",", "\<\"THX\"\>", ",", "\<\"TIA\"\>", 
+   ",", "\<\"TIAD\"\>", ",", "\<\"TIC\"\>", ",", "\<\"TIL\"\>", 
+   ",", "\<\"TILIS\"\>", ",", "\<\"TIR\"\>", ",", "\<\"TLK2UL8R\"\>", 
+   ",", "\<\"TL\"\>", ",", "\<\"TL;DR\"\>", ",", "\<\"TM\"\>", 
+   ",", "\<\"TMA\"\>", ",", "\<\"TMB\"\>", ",", "\<\"TMB\"\>", 
+   ",", "\<\"TMI\"\>", ",", "\<\"TMOT\"\>", ",", "\<\"TMTH\"\>", 
+   ",", "\<\"TMYL\"\>", ",", "\<\"TMWFI\"\>", ",", "\<\"TNSTAAFL\"\>", 
+   ",", "\<\"TNT\"\>", ",", "\<\"TOJ\"\>", ",", "\<\"TOS\"\>", 
+   ",", "\<\"TOTES\"\>", ",", "\<\"TOU\"\>", ",", "\<\"TOY\"\>", 
+   ",", "\<\"TPM\"\>", ",", "\<\"TPTB\"\>", ",", "\<\"TQ\"\>", 
+   ",", "\<\"TSH\"\>", ",", "\<\"TSNF\"\>", ",", "\<\"TSTB\"\>", 
+   ",", "\<\"TT\"\>", ",", "\<\"TTFN\"\>", ",", "\<\"TTLY\"\>", 
+   ",", "\<\"TTTT\"\>", ",", "\<\"TTUL\"\>", ",", "\<\"TU\"\>", 
+   ",", "\<\"TUI\"\>", ",", "\<\"TURNT\"\>", ",", "\<\"TWSS\"\>", 
+   ",", "\<\"TTG\"\>", ",", "\<\"TTYAFN\"\>", ",", "\<\"TTYL\"\>", 
+   ",", "\<\"TTYS\"\>", ",", "\<\"TY\"\>", ",", "\<\"TYFC\"\>", 
+   ",", "\<\"TYFYC\"\>", ",", "\<\"TYS\"\>", ",", "\<\"TYT\"\>", 
+   ",", "\<\"TYSO\"\>", ",", "\<\"TYAFY\"\>", ",", "\<\"TYVM\"\>", 
+   ",", "\<\"TX\"\>", ",", "\<\"^URS\"\>", ",", "\<\"UCMU\"\>", 
+   ",", "\<\"UDI\"\>", ",", "\<\"UDM\"\>", ",", "\<\"UDS\"\>", 
+   ",", "\<\"UFB\"\>", ",", "\<\"UFN\"\>", ",", "\<\"UFWM\"\>", 
+   ",", "\<\"UGTBK\"\>", ",", "\<\"UHGTBSM\"\>", ",", "\<\"UKTR\"\>", 
+   ",", "\<\"UL\"\>", ",", "\<\"U-L\"\>", ",", "\<\"UNA\"\>", 
+   ",", "\<\"UN4TUN8\"\>", ",", "\<\"UNBLEFBLE\"\>", ",", "\<\"UNCRTN\"\>", 
+   ",", "\<\"UNPC\"\>", ",", "\<\"UOK\"\>", ",", "\<\"UR\"\>", 
+   ",", "\<\"UR2YS4ME\"\>", ",", "\<\"URA*\"\>", ",", "\<\"URH\"\>", 
+   ",", "\<\"URSKTM\"\>", ",", "\<\"URTM\"\>", ",", "\<\"URW\"\>", 
+   ",", "\<\"USBCA\"\>", ",", "\<\"USU\"\>", ",", "\<\"UT\"\>", 
+   ",", "\<\"UT2L\"\>", ",", "\<\"UTM\"\>", ",", "\<\"UV\"\>", 
+   ",", "\<\"UW\"\>", ",", "\<\"UX\"\>", ",", "\<\"V\"\>", ",", "\<\"VAT\"\>",
+    ",", "\<\"VBL\"\>", ",", "\<\"VBS\"\>", ",", "\<\"VC\"\>", 
+   ",", "\<\"VEG\"\>", ",", "\<\"VFF\"\>", ",", "\<\"VFM\"\>", 
+   ",", "\<\"VGC\"\>", ",", "\<\"VGG\"\>", ",", "\<\"VGH\"\>", 
+   ",", "\<\"VIP\"\>", ",", "\<\"VM\"\>", ",", "\<\"VN\"\>", 
+   ",", "\<\"VNH\"\>", ",", "\<\"VoIP\"\>", ",", "\<\"VRY\"\>", 
+   ",", "\<\"VSC\"\>", ",", "\<\"VSF\"\>", ",", "\<\"VWD\"\>", 
+   ",", "\<\"VWP\"\>", ",", "\<\"W@\"\>", ",", "\<\"W/\"\>", 
+   ",", "\<\"W/B\"\>", ",", "\<\"W3\"\>", ",", "\<\"W8\"\>", 
+   ",", "\<\"WAH\"\>", ",", "\<\"WAJ\"\>", ",", "\<\"WAM\"\>", 
+   ",", "\<\"WAN2\"\>", ",", "\<\"WAN2TLK\"\>", ",", "\<\"WAREZ\"\>", 
+   ",", "\<\"WAS\"\>", ",", "\<\"WAS\"\>", ",", "\<\"WAT\"\>", 
+   ",", "\<\"WAWA\"\>", ",", "\<\"WAYF\"\>", ",", "\<\"W/B\"\>", 
+   ",", "\<\"WB\"\>", ",", "\<\"WBS\"\>", ",", "\<\"WBU\"\>", 
+   ",", "\<\"WC\"\>", ",", "\<\"WC\"\>", ",", "\<\"WCA\"\>", 
+   ",", "\<\"W/E\"\>", ",", "\<\"W/END\"\>", ",", "\<\"WE\"\>", 
+   ",", "\<\"WEBO\"\>", ",", "\<\"WEEBO\"\>", ",", "\<\"WEP\"\>", 
+   ",", "\<\"WH5\"\>", ",", "\<\"WHATEVES\"\>", ",", "\<\"WIBNI\"\>", 
+   ",", "\<\"WDALYIC\"\>", ",", "\<\"WDYK\"\>", ",", "\<\"WDYT\"\>", 
+   ",", "\<\"WGACA\"\>", ",", "\<\"WIIFM\"\>", ",", "\<\"WISP\"\>", 
+   ",", "\<\"WITP\"\>", ",", "\<\"WITW\"\>", ",", "\<\"WIU\"\>", 
+   ",", "\<\"WK\"\>", ",", "\<\"WKD\"\>", ",", "\<\"WRT\"\>", 
+   ",", "\<\"WL\"\>", ",", "\<\"W/O\"\>", ",", "\<\"WOA\"\>", 
+   ",", "\<\"WOKE\"\>", ",", "\<\"WOMBAT\"\>", ",", "\<\"WOW\"\>", 
+   ",", "\<\"WRK\"\>", ",", "\<\"WRU\"\>", ",", "\<\"WRU@\"\>", 
+   ",", "\<\"WRUD\"\>", ",", "\<\"WTB\"\>", ",", "\<\"WTF\"\>", 
+   ",", "\<\"WTFE\"\>", ",", "\<\"WTFO\"\>", ",", "\<\"WTG\"\>", 
+   ",", "\<\"WTGP\"\>", ",", "\<\"WTH\"\>", ",", "\<\"WTM\"\>", 
+   ",", "\<\"WTS\"\>", ",", "\<\"WTT\"\>", ",", "\<\"WU\"\>", 
+   ",", "\<\"WUCIWUG\"\>", ",", "\<\"WUF\"\>", ",", "\<\"WUP\"\>", 
+   ",", "\<\"WUT\"\>", ",", "\<\"WUW\"\>", ",", "\<\"WUU2\"\>", 
+   ",", "\<\"WUZ\"\>", ",", "\<\"WWJD\"\>", ",", "\<\"WWJD\"\>", 
+   ",", "\<\"WWNC\"\>", ",", "\<\"WWYC\"\>", ",", "\<\"WYCM\"\>", 
+   ",", "\<\"WYD\"\>", ",", "\<\"WYGAM\"\>", ",", "\<\"WYHAM\"\>", 
+   ",", "\<\"WYLEI\"\>", ",", "\<\"WYSIWYG\"\>", ",", "\<\"WYWH\"\>", 
+   ",", "\<\"X-1-10\"\>", ",", "\<\"X\"\>", ",", "\<\"X!\"\>", 
+   ",", "\<\"XD\"\>", ",", "\<\"XD\"\>", ",", "\<\"XME\"\>", 
+   ",", "\<\"XOXOXO\"\>", ",", "\<\"XLNT\"\>", ",", "\<\"XLR8\"\>", 
+   ",", "\<\"XPOST\"\>", ",", "\<\"XYL\"\>", ",", "\<\"XYZ\"\>", 
+   ",", "\<\"Y?\"\>", ",", "\<\"Y\"\>", ",", "\<\"Y2K\"\>", ",", "\<\"YA\"\>",
+    ",", "\<\"YAA\"\>", ",", "\<\"YABA\"\>", ",", "\<\"YARLY\"\>", 
+   ",", "\<\"YAS\"\>", ",", "\<\"YBIC\"\>", ",", "\<\"YBS\"\>", 
+   ",", "\<\"YCDBWYCID\"\>", ",", "\<\"YCHT\"\>", ",", "\<\"YCLIU\"\>", 
+   ",", "\<\"YCMU\"\>", ",", "\<\"YCT\"\>", ",", "\<\"YD\"\>", 
+   ",", "\<\"YEET\"\>", ",", "\<\"YF\"\>", ",", "\<\"YG\"\>", 
+   ",", "\<\"YGG\"\>", ",", "\<\"YGTBKM\"\>", ",", "\<\"YGTR\"\>", 
+   ",", "\<\"YHBT\"\>", ",", "\<\"YHBW\"\>", ",", "\<\"YHL\"\>", 
+   ",", "\<\"YIU\"\>", ",", "\<\"YKW\"\>", ",", "\<\"YKWYCD\"\>", 
+   ",", "\<\"YL\"\>", ",", "\<\"YMMV\"\>", ",", "\<\"YNK\"\>", 
+   ",", "\<\"YOLO\"\>", ",", "\<\"YR\"\>", ",", "\<\"YR\"\>", 
+   ",", "\<\"YRYOCC\"\>", ",", "\<\"YSIC\"\>", ",", "\<\"YSYD\"\>", 
+   ",", "\<\"YT\"\>", ",", "\<\"YT\"\>", ",", "\<\"YTB\"\>", 
+   ",", "\<\"YTB\"\>", ",", "\<\"YTTL\"\>", ",", "\<\"YTG\"\>", 
+   ",", "\<\"YW\"\>", ",", "\<\"YWHNB\"\>", ",", "\<\"YWHOL\"\>", 
+   ",", "\<\"YWSYLS\"\>", ",", "\<\"YYSSW\"\>", ",", "\<\"Z\"\>", 
+   ",", "\<\"Z\"\>", ",", "\<\"Z\"\>", ",", "\<\"Z%\"\>", ",", "\<\"ZH\"\>", 
+   ",", "\<\"ZOMG\"\>", ",", "\<\"ZOT\"\>", ",", "\<\"ZUP\"\>", 
+   ",", "\<\"ZZZZ\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.960283728834128*^9, 3.960283738867936*^9}},
+ CellLabel->
+  "Out[236]=",ExpressionUUID->"f4a5aa8f-dd12-489b-9126-e7234254b654"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"wrds", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"slang", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "1"}], "]"}], "]"}], ",", "1"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"descs", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"slang", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "2"}], "]"}], "]"}], ",", "1"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"exas", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"slang", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "3"}], "]"}], "]"}], ",", "1"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"cons", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{
+     RowBox[{"slang", "[", 
+      RowBox[{"[", 
+       RowBox[{"All", ",", "4"}], "]"}], "]"}], ",", "1"}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.9602847837747383`*^9, 3.960284806640559*^9}},
+ CellLabel->
+  "In[241]:=",ExpressionUUID->"f13d107b-eefc-4318-888d-affa9ab451e6"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.96028475694114*^9, 
+  3.960284769589776*^9}},ExpressionUUID->"9a77eee6-6298-4e4d-bfcd-\
+0a0668b104dc"],
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"wrd", " ", "->", " ", 
+    RowBox[{"<|", 
+     RowBox[{
+      RowBox[{"\"\<Description\>\"", "->", "des"}], ",", " ", 
+      RowBox[{"\"\<Example\>\"", "->", "exa"}], ",", " ", 
+      RowBox[{"\"\<Context\>\"", "->", "con"}]}], "|>"}]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"wrd", ",", " ", "words"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"des", ",", " ", "descs"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"exa", ",", " ", "exas"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"con", ",", " ", "cons"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.960284744356477*^9, 3.960284744914019*^9}, {
+   3.960284788766015*^9, 3.9602849229818172`*^9}, 
+   3.9602849549022503`*^9},ExpressionUUID->"05abc6b7-e678-45e6-8eba-\
+52a1a5f3520c"]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{260, Automatic}, {Automatic, 23}},
+FrontEndVersion->"14.2 for Mac OS X ARM (64-bit) (March 16, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"75346faa-5c9e-4d36-ad7b-a30f84cd2530"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 380, 8, 29, "Input",ExpressionUUID->"d97e7464-d416-4b45-8da8-c1f77c5cd644"],
+Cell[959, 32, 4542, 95, 235, "Output",ExpressionUUID->"0b0034dc-e439-4112-a560-14c3e9b88fe1"]
+}, Open  ]],
+Cell[5516, 130, 693, 18, 90, "Input",ExpressionUUID->"39248881-de53-42fe-bdc6-320aba8e5140"],
+Cell[CellGroupData[{
+Cell[6234, 152, 216, 4, 29, "Input",ExpressionUUID->"d205019d-0216-4ccf-96b7-cb495c795352"],
+Cell[6453, 158, 91201, 1677, 619, "Output",ExpressionUUID->"de3cf9f7-4401-4e0c-b505-067432b06f86"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[97691, 1840, 182, 3, 29, "Input",ExpressionUUID->"7049ab61-7df9-4ba2-8608-a2263bd8fd21"],
+Cell[97876, 1845, 2193, 47, 125, "Output",ExpressionUUID->"ecf1145e-13f1-4b83-9742-51f6a152f88e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[100106, 1897, 256, 6, 29, "Input",ExpressionUUID->"f8e1c430-d88d-4c37-83b5-28197e840722"],
+Cell[100365, 1905, 39661, 603, 1054, "Output",ExpressionUUID->"f4a5aa8f-dd12-489b-9126-e7234254b654"]
+}, Open  ]],
+Cell[140041, 2511, 985, 32, 90, "Input",ExpressionUUID->"f13d107b-eefc-4318-888d-affa9ab451e6"],
+Cell[141029, 2545, 151, 3, 29, "Input",ExpressionUUID->"9a77eee6-6298-4e4d-bfcd-0a0668b104dc"],
+Cell[141183, 2550, 818, 20, 29, "Input",ExpressionUUID->"05abc6b7-e678-45e6-8eba-52a1a5f3520c"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
